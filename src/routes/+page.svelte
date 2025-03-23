@@ -26,11 +26,11 @@
                 <div class="w-full md:w-1/2 flex">
                     <div class="w-1/2 pr-4">
                         <h3 class="text-2xl font-bold mb-4">Who We Are</h3>
-                        <p class="mb-6">[Team description goes here]</p>
+                        <p class="mb-6">We are a rookie team based in Sammamish Washington. Our team loves Robotics and consists of 3 7th graders, 2 8th graders and 2 9th graders! </p>
                     </div>
                     <div class="w-1/2 pl-4">
                         <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
-                        <p class="mb-6">[Mission statement goes here]</p>
+                        <p class="mb-6">Our mission is to promote a better and greener planet, educate the young on robotics and have fun while doing it!</p>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2">

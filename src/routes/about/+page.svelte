@@ -49,12 +49,12 @@
 		</div>
 	</section>
 	<!-- Our Mission -->
-	<section class="text-center space-y-4 max-w-3xl mx-auto">
+	<!-- <section class="text-center space-y-4 max-w-3xl mx-auto">
 		<h2 class="text-3xl font-semibold">Our Mission</h2>
 		<p class="text-lg">
 			To use our creativity, teamwork, and engineering mindset to solve real-world problems and inspire others to innovate with compassion and curiosity.
 		</p>
-	</section>
+	</section> -->
 
 	<!-- Achievements -->
 	<section class="max-w-6xl mx-auto space-y-8">
