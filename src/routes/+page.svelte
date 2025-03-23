@@ -48,18 +48,22 @@
                 <h2 class="text-3xl font-bold">Our Impact</h2>
                 <div class="flex-1 h-1 bg-white ml-4"></div> <!-- Line on the right -->
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <span class="text-4xl font-bold block">500+</span>
-                    <span>Students Reached</span>
+                    <span>Using our resources</span>
                 </div>
                 <div>
-                    <span class="text-4xl font-bold block">20+</span>
-                    <span>Events Hosted</span>
+                    <span class="text-4xl font-bold block">100+</span>
+                    <span>Introduced to Robotics</span>
                 </div>
                 <div>
-                    <span class="text-4xl font-bold block">1000+</span>
-                    <span>Volunteer Hours</span>
+                    <span class="text-4xl font-bold block">100+</span>
+                    <span>Introduced to FIRST</span>
+                </div>
+                <div>
+                    <span class="text-4xl font-bold block">4</span>
+                    <span>Teams Mentored</span>
                 </div>
             </div>
         </div>
@@ -82,18 +86,22 @@
                         <p class="text-black">We built a chatbot which can answer questions, an initiative where we plant trees and so much more! Click here to find out</p>
                     </div>
                 </a>
-                <div class="card bg-white text-black p-6 rounded-lg shadow-lg">
-                    <div class="flex items-center justify-center mb-4">
-                        <h3 class="text-xl font-bold">Community Events</h3>
+                <a href="outreach/community-events">
+                    <div class="card bg-white text-black p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center justify-center mb-4">
+                            <h3 class="text-xl font-bold">Community Events</h3>
+                        </div>
+                        <p>Participating in community events to showcase robotics technology and inspire the next generation of engineers. Click here to find out more!</p>
                     </div>
-                    <p>Participating in community events to showcase robotics technology and inspire the next generation of engineers.</p>
-                </div>
-                <div class="card bg-white text-black p-6 rounded-lg shadow-lg">
-                    <div class="flex items-center justify-center mb-4">
-                        <h3 class="text-xl font-bold">Mentorship</h3>
+                </a>
+                <a href="/outreach/mentorship">
+                    <div class="card bg-white text-black p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center justify-center mb-4">
+                            <h3 class="text-xl font-bold">Mentorship</h3>
+                        </div>
+                        <p>Supporting younger teams and students interested in FIRST Tech Challenge and robotics. Click here to learn about the amazing teams we helped and how much they improved!</p>
                     </div>
-                    <p>Supporting younger teams and students interested in FIRST Tech Challenge and robotics.</p>
-                </div>
+                </a>
             </div>
         </div>
     </div>

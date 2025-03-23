@@ -22,6 +22,11 @@
             title: "teaching robotics to the young",
             description: "We made videos to teach younger kids the basics of arduino and interacting with hardware click here to watch!",
             link: "https://theincredibots.trainercentralsite.com/course/introduction-to-arduino-build-your-first-automated-devices#/home"
+        },
+        {
+            title: "FIRST LEGO League Mentorship",
+            description: "We mentored local FIRST LEGO League teams, sharing our knowledge and experience.",
+            link: "/outreach/mentorship"
         }
     ];
 </script>
@@ -57,18 +62,22 @@
             <h2 class="text-3xl font-bold">Our Impact</h2>
             <div class="flex-1 h-1 bg-white ml-4" style="margin-right: 20px;"></div> <!-- Line on the right -->
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
                 <span class="text-4xl font-bold block">500+</span>
-                <span>Students Reached</span>
+                <span>Using our resources</span>
             </div>
             <div>
-                <span class="text-4xl font-bold block">20+</span>
-                <span>Events Hosted</span>
+                <span class="text-4xl font-bold block">100+</span>
+                <span>Introduced to Robotics</span>
             </div>
             <div>
-                <span class="text-4xl font-bold block">1000+</span>
-                <span>Volunteer Hours</span>
+                <span class="text-4xl font-bold block">100+</span>
+                <span>Introduced to FIRST</span>
+            </div>
+            <div>
+                <span class="text-4xl font-bold block">4</span>
+                <span>Teams Mentored</span>
             </div>
         </div>
     </div>
