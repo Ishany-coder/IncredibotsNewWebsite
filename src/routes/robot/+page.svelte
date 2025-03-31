@@ -69,26 +69,26 @@
 	</section>
 
 	<!-- Technical Highlights -->
-	<section class="py-16 px-4 bg-white/10 backdrop-blur-md">
-		<div class="max-w-6xl mx-auto text-center">
-			<h2 class="text-3xl font-bold text-white mb-12">Jefwi's Capabilities</h2>
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-				<div class="bg-white/5 rounded-xl p-6 transform transition-all duration-300 hover:scale-105">
-					<div class="text-4xl mb-4">⚙️</div>
-					<h3 class="text-xl font-bold text-white mb-2">Precision Engineering</h3>
-					<p class="text-white/80">Custom-designed mechanisms for optimal game performance</p>
-				</div>
-				<div class="bg-white/5 rounded-xl p-6 transform transition-all duration-300 hover:scale-105">
-					<div class="text-4xl mb-4">🤖</div>
-					<h3 class="text-xl font-bold text-white mb-2">Advanced Control</h3>
-					<p class="text-white/80">Sophisticated autonomous and driver-controlled programs</p>
-				</div>
-				<div class="bg-white/5 rounded-xl p-6 transform transition-all duration-300 hover:scale-105">
-					<div class="text-4xl mb-4">🔄</div>
-					<h3 class="text-xl font-bold text-white mb-2">Rapid Iteration</h3>
-					<p class="text-white/80">Continuous improvement through testing and refinement</p>
-				</div>
-			</div>
-		</div>
-	</section>
+<!--	<section class="py-16 px-4 bg-white/10 backdrop-blur-md">-->
+<!--		<div class="max-w-6xl mx-auto text-center">-->
+<!--			<h2 class="text-3xl font-bold text-white mb-12">Jefwi's Capabilities</h2>-->
+<!--			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">-->
+<!--				<div class="bg-white/5 rounded-xl p-6 transform transition-all duration-300 hover:scale-105">-->
+<!--					<div class="text-4xl mb-4">⚙️</div>-->
+<!--					<h3 class="text-xl font-bold text-white mb-2">Precision Engineering</h3>-->
+<!--					<p class="text-white/80">Custom-designed mechanisms for optimal game performance</p>-->
+<!--				</div>-->
+<!--				<div class="bg-white/5 rounded-xl p-6 transform transition-all duration-300 hover:scale-105">-->
+<!--					<div class="text-4xl mb-4">🤖</div>-->
+<!--					<h3 class="text-xl font-bold text-white mb-2">Advanced Control</h3>-->
+<!--					<p class="text-white/80">Sophisticated autonomous and driver-controlled programs</p>-->
+<!--				</div>-->
+<!--				<div class="bg-white/5 rounded-xl p-6 transform transition-all duration-300 hover:scale-105">-->
+<!--					<div class="text-4xl mb-4">🔄</div>-->
+<!--					<h3 class="text-xl font-bold text-white mb-2">Rapid Iteration</h3>-->
+<!--					<p class="text-white/80">Continuous improvement through testing and refinement</p>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</section>-->
 </main>
