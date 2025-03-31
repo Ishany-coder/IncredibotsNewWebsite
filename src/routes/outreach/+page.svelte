@@ -3,74 +3,53 @@
 
     const outreachProjects = [
         {
-            title: "Environmental Impact",
+            title: "Seaforest Initiative",
             icon: "🌱",
-            description: "Our initiatives for a greener future",
+            description: "Working with local communities to plant trees and promote environmental sustainability.",
             tag: "Environment",
-            link: "/outreach/environment",
-            projects: [
-                {
-                    name: "Tree Planting Initiative",
-                    description: "Working with local communities to plant trees and promote environmental sustainability.",
-                    image: "/Meet_1.jpg",
-                    stats: "100+ trees planted"
-                },
-                {
-                    name: "AI Chatbot Development",
-                    description: "Created an innovative chatbot to help teams with robotics questions and competition preparation.",
-                    image: "/Meet_1.jpg",
-                    stats: "500+ users helped"
-                }
-            ]
+            link: "/outreach/Seaforest"
         },
         {
-            title: "Educational Outreach",
+            title: "AI Scouting Chatbot",
+            icon: "🤖",
+            description: "Created an innovative chatbot to help teams with robotics questions and competition preparation.",
+            tag: "Technology",
+            link: "/outreach/scoutingChatbot"
+        },
+        {
+            title: "Arduino Education",
             icon: "📚",
-            description: "Sharing knowledge and inspiring others",
+            description: "Teaching younger kids the basics of arduino and interacting with hardware. Click here to watch our comprehensive video series!",
             tag: "Education",
-            link: "/outreach/education",
-            projects: [
-                {
-                    name: "Arduino Workshop Series",
-                    description: "Teaching younger students the basics of robotics through hands-on Arduino projects.",
-                    image: "/Meet_1.jpg",
-                    stats: "50+ students taught"
-                },
-                {
-                    name: "Online Learning Resources",
-                    description: "Creating comprehensive video tutorials and documentation for aspiring robotics enthusiasts.",
-                    image: "/Meet_1.jpg",
-                    stats: "1000+ views"
-                }
-            ]
+            link: "https://theincredibots.trainercentralsite.com/course/introduction-to-arduino-build-your-first-automated-devices#/home"
         },
         {
-            title: "Community Engagement",
+            title: "Community Events",
             icon: "🤝",
-            description: "Making a difference in our local community",
+            description: "Participating in community events to showcase robotics technology and inspire the next generation of engineers.",
             tag: "Community",
-            link: "/outreach/community",
-            projects: [
-                {
-                    name: "FLL Team Mentorship",
-                    description: "Supporting and guiding younger FIRST LEGO League teams in their robotics journey.",
-                    image: "/Hawking.jpg",
-                    stats: "4 teams mentored"
-                },
-                {
-                    name: "STEM Fairs",
-                    description: "Participating in local STEM events to showcase robotics and inspire future engineers.",
-                    image: "/Hawking.jpg",
-                    stats: "10+ events"
-                }
-            ]
+            link: "/outreach/community-events"
+        },
+        {
+            title: "FLL Mentorship",
+            icon: "👥",
+            description: "Supporting and guiding younger FIRST LEGO League teams in their robotics journey.",
+            tag: "Mentorship",
+            link: "/outreach/mentorship"
+        },
+        {
+            title: "Sonic Dunk!",
+            icon: "🏀",
+            description: "Our FLL innovation project where we share our passion about basketball with blind people around us",
+            tag: "Sonic Dunk",
+            link: "https://nettle-tin-b81.notion.site/Sonic-Dunk-1c5ecd35b1c8417c94f096eab2dd1c58"
         }
     ];
 </script>
 
 <Navbar />
 
-<main class="min-h-screen bg-gradient-to-br from-red-400 to-red-600">
+<main class="min-h-screen bg-gradient-to-br from-red-400 to-red-600 pt-16">
     <!-- Hero Section with Diagonal Design -->
     <section class="relative h-[60vh] flex items-center justify-center overflow-hidden skew-y-[-3deg] transform -mt-10 bg-black/40">
         <div class="absolute inset-0 -skew-y-[3deg]">

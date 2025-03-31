@@ -5,7 +5,6 @@
         { label: "About", path: "/about" },
         { label: "Outreach", path: "/outreach" },
         { label: "Contact", path: "/contact" },
-        { label: "Scouting Chatbot", path: "/outreach/scoutingChatbot" },
         { label: "Robot", path: "/robot" }
     ];
 </script>

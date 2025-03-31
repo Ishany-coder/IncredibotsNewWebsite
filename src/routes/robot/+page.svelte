@@ -4,45 +4,92 @@
 	const robotParts = [
 		{
 			title: 'Mecanum Drive Train',
-			image: '/mecanum.jpg',
-			description: `Our robot uses a mecanum drive system for full omnidirectional movement. This allows us to strafe, pivot, and make precise movements on the field, giving us superior agility during autonomous and tele-op periods.`
+			image: '/lm1.png',
+			description: `Jefwi uses a mecanum drive system for full omnidirectional movement. This allows us to strafe, pivot, and make precise movements on the field, giving us superior agility during autonomous and tele-op periods.`
 		},
 		{
 			title: 'Clintake Combination',
-			image: '/clintake.jpg',
-			description: `We use a hybrid claw and intake mechanism that can grab and pull in game elements quickly. The claw provides strong grip while the intake rollers allow for efficient collection during motion. We call it the Clintake!`
+			image: '/clintake.png',
+			description: `Jefwi features a hybrid claw and intake mechanism that can grab and pull in game elements quickly. The claw provides strong grip while the intake rollers allow for efficient collection during motion. We call it the Clintake!`,
+			objectFit: 'contain'
 		},
 		{
 			title: 'Software State Machine',
 			image: '/state_machine.jpg',
-			description: `Instead of writing long if-else chains, we designed our robot’s behavior using a state machine. Each subsystem operates through well-defined states like IDLE, INTAKING, LIFTING, and DROPPING. This makes our autonomous and tele-op code easier to debug, extend, and maintain—while keeping transitions smooth and predictable.`
+			description: `Instead of writing long if-else chains, we designed Jefwi's behavior using a state machine. Each subsystem operates through well-defined states like IDLE, INTAKING, LIFTING, and DROPPING. This makes our autonomous and tele-op code easier to debug, extend, and maintain—while keeping transitions smooth and predictable.`
 		}
 	];
 </script>
 
 <Navbar />
-<div class="min-h-screen bg-red-400 text-white px-6 py-10 space-y-16">
+
+<main class="min-h-screen bg-gradient-to-b from-red-400 to-red-500">
 	<!-- Hero Section -->
-	<section class="text-center space-y-4">
-		<h1 class="text-5xl font-bold">Meet Our Robot</h1>
-		<p class="text-xl max-w-2xl mx-auto">
-			Built for versatility, precision, and performance. Here's a closer look at the key mechanisms that power our competitive edge.
-		</p>
+	<section class="relative h-[60vh] flex items-center justify-center overflow-hidden">
+		<div class="absolute inset-0">
+			<div class="w-full h-full bg-black/30"></div>
+		</div>
+		<div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+			<span class="inline-block bg-red-500 px-4 py-1 rounded-full text-sm mb-4">FTC 26336</span>
+			<h1 class="text-5xl font-bold mb-6">Meet Jefwi</h1>
+			<p class="text-xl">
+				Our competition robot, built for versatility, precision, and performance. Here's a closer look at 
+				what makes Jefwi special.
+			</p>
+		</div>
 	</section>
 
 	<!-- Robot Mechanisms -->
-	<section class="max-w-6xl mx-auto space-y-12">
-		{#each robotParts as part}
-			<div class="flex flex-col md:flex-row items-center gap-8 bg-white text-red-500 rounded-xl shadow-lg overflow-hidden p-6">
-				<!-- Image -->
-				<img src={part.image} alt={part.title} class="w-full md:w-1/2 h-64 object-cover rounded-lg" />
+	<section class="py-16 px-4">
+		<div class="max-w-6xl mx-auto space-y-12">
+			{#each robotParts as part, i}
+				<div class="bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden transform transition-all duration-300 hover:scale-[1.02]">
+					<div class="flex flex-col md:flex-row {i % 2 === 1 ? 'md:flex-row-reverse' : ''}">
+						<!-- Image Section - Updated styling for Clintake -->
+						<div class="md:w-1/2 h-full bg-black/20">
+							<div class="aspect-[4/3] md:h-full w-full">
+								<img src={part.image} 
+									 alt={`Jefwi's ${part.title}`} 
+									 class="w-full h-full {part.objectFit === 'contain' ? 'object-contain' : 'object-cover'} object-center">
+							</div>
+						</div>
 
-				<!-- Text Content -->
-				<div class="space-y-3 md:w-1/2">
-					<h2 class="text-3xl font-bold">{part.title}</h2>
-					<p class="text-sm">{part.description}</p>
+						<!-- Content Section -->
+						<div class="md:w-1/2 p-8 flex flex-col justify-center">
+							<div class="space-y-4">
+								<h2 class="text-3xl font-bold text-white">{part.title}</h2>
+								<p class="text-white/90 leading-relaxed">
+									{part.description}
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			{/each}
+		</div>
+	</section>
+
+	<!-- Technical Highlights -->
+	<section class="py-16 px-4 bg-white/10 backdrop-blur-md">
+		<div class="max-w-6xl mx-auto text-center">
+			<h2 class="text-3xl font-bold text-white mb-12">Jefwi's Capabilities</h2>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<div class="bg-white/5 rounded-xl p-6 transform transition-all duration-300 hover:scale-105">
+					<div class="text-4xl mb-4">⚙️</div>
+					<h3 class="text-xl font-bold text-white mb-2">Precision Engineering</h3>
+					<p class="text-white/80">Custom-designed mechanisms for optimal game performance</p>
+				</div>
+				<div class="bg-white/5 rounded-xl p-6 transform transition-all duration-300 hover:scale-105">
+					<div class="text-4xl mb-4">🤖</div>
+					<h3 class="text-xl font-bold text-white mb-2">Advanced Control</h3>
+					<p class="text-white/80">Sophisticated autonomous and driver-controlled programs</p>
+				</div>
+				<div class="bg-white/5 rounded-xl p-6 transform transition-all duration-300 hover:scale-105">
+					<div class="text-4xl mb-4">🔄</div>
+					<h3 class="text-xl font-bold text-white mb-2">Rapid Iteration</h3>
+					<p class="text-white/80">Continuous improvement through testing and refinement</p>
 				</div>
 			</div>
-		{/each}
+		</div>
 	</section>
-</div>
+</main>
