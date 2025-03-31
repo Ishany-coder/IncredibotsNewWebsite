@@ -88,7 +88,6 @@
                             <p class="text-gray-300 mb-6 flex-grow">
                                 {category.description}
                             </p>
-                            
                             <!-- Project Highlights -->
                             <div class="space-y-3">
                                 {#each category.projects as project}

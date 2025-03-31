@@ -21,39 +21,46 @@
 
 <Navbar />
 
-<main class="min-h-screen bg-gradient-to-b from-red-400 to-red-500">
+<main class="min-h-screen bg-zinc-900">
 	<!-- Hero Section -->
 	<section class="relative h-[60vh] flex items-center justify-center overflow-hidden">
 		<div class="absolute inset-0">
-			<img src="/Hawking.jpg" alt="Team Banner" class="w-full h-full object-cover opacity-30">
+			<img src="/Hawking.jpg" alt="Team Banner" class="w-full h-full object-cover">
+			<div class="absolute inset-0 bg-zinc-900/80 backdrop-blur-sm"></div>
+			<!-- Decorative grid -->
+			<div class="absolute inset-0 opacity-10">
+				<div class="grid grid-cols-12 h-full">
+					{#each Array(12) as _}
+						<div class="border-l border-purple-500"></div>
+					{/each}
+				</div>
+			</div>
 		</div>
 		<div class="relative z-10 text-center text-white px-4">
 			<h1 class="text-6xl font-bold mb-4">Meet The Incredibots</h1>
 			<p class="text-xl max-w-2xl mx-auto">
-				A passionate team of young innovators from Sammamish, Washington, pushing the boundaries of robotics and technology.
+				A passionate team of young innovators from Sammamish, Washington.
 			</p>
 		</div>
 	</section>
 
 	<!-- Team Mission -->
 	<section class="py-16 px-4">
-		<div class="max-w-6xl mx-auto bg-white/10 backdrop-blur-md rounded-2xl p-8 text-white">
+		<div class="max-w-6xl mx-auto bg-zinc-800 rounded-2xl p-8 text-white border border-purple-500/10">
 			<div class="grid md:grid-cols-2 gap-12 items-center">
 				<div class="space-y-6">
-					<h2 class="text-4xl font-bold">Our Journey</h2>
+					<h2 class="text-4xl font-bold text-purple-300">Our Journey</h2>
 					<p class="text-lg leading-relaxed">
-						We're a rookie team that started with FIRST LEGO League and never stopped dreaming big. 
-						Our diverse team of 7th, 8th, and 9th graders brings together unique perspectives and skills, 
-						united by our passion for robotics and innovation.
+						We're a rookie team that started with FIRST LEGO League and never stopped dreaming big.
 					</p>
 				</div>
 				<div class="grid grid-cols-2 gap-4">
-					<div class="bg-white/20 p-6 rounded-xl">
-						<h3 class="text-2xl font-bold mb-2">Mission</h3>
+					<div class="bg-zinc-700/50 p-6 rounded-xl border border-purple-500/10">
+						<h3 class="text-2xl font-bold mb-2 text-purple-200">Mission</h3>
 						<p>Promoting a better and greener planet while educating young minds about robotics.</p>
 					</div>
-					<div class="bg-white/20 p-6 rounded-xl">
-						<h3 class="text-2xl font-bold mb-2">Vision</h3>
+					<div class="bg-zinc-700/50 p-6 rounded-xl border border-purple-500/10">
+						<h3 class="text-2xl font-bold mb-2 text-purple-200">Vision</h3>
 						<p>Inspiring the next generation of innovators through technology and teamwork.</p>
 					</div>
 				</div>
