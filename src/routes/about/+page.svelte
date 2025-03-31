@@ -2,73 +2,99 @@
 	import Navbar from "$lib/Navbar.svelte";
 
 	const teamMembers = [
-		{ name: 'Ishan Ghosh', image: '/Ishan.jpg' },
-		{ name: 'Ishika Saini', image: '/Ishika.png' },
-		{ name: 'Arjit Singh', image: '/Arjit.jpg' },
-		{ name: 'Anay Agrawal', image: '/Anay.jpg' },
-		{ name: 'Rishi Ohri', image: '/Rishi.png' },
-		{ name: 'Pia Seth', image: '/Pia.png' },
-		{ name: 'Hridhaan Damani', image: '/Hridhaan.png' }
+		{ name: 'Ishan Ghosh', role: 'Team Captain', image: '/Ishan.jpg' },
+		{ name: 'Ishika Saini', role: 'Lead Programmer', image: '/Ishika.png' },
+		{ name: 'Arjit Singh', role: 'Mechanical Lead', image: '/Arjit.jpg' },
+		{ name: 'Anay Agrawal', role: 'Design Lead', image: '/Anay.jpg' },
+		{ name: 'Rishi Ohri', role: 'Outreach Lead', image: '/Rishi.png' },
+		{ name: 'Pia Seth', role: 'Documentation Lead', image: '/Pia.png' },
+		{ name: 'Hridhaan Damani', role: 'Strategy Lead', image: '/Hridhaan.png' }
 	];
 
 	const achievements = [
-		{ title: 'WAFFLE', description: 'Champions of the international innovation competition.' },
-		{ title: 'Maxwell League Meet 1', description: 'Winners of the first league meet.' },
-		{ title: 'Maxwell League Meet 2', description: 'Back-to-back champions at Meet 2.' },
-		{ title: 'Hawking Interleague', description: 'Victors of the prestigious interleague event.' }
+		{ title: 'WAFFLE', description: 'Champions of the international innovation competition.', icon: '🏆' },
+		{ title: 'Maxwell League Meet 1', description: 'Winners of the first league meet.', icon: '🥇' },
+		{ title: 'Maxwell League Meet 2', description: 'Back-to-back champions at Meet 2.', icon: '🎯' },
+		{ title: 'Hawking Interleague', description: 'Victors of the prestigious interleague event.', icon: '⭐' }
 	];
 </script>
 
 <Navbar />
-<div class="min-h-screen bg-red-400 text-white px-6 py-10 space-y-16">
-	<!-- About Us -->
-	<section class="flex flex-col md:flex-row items-center justify-center gap-10 max-w-6xl mx-auto">
-		<!-- About Text -->
-		<div class="md:w-1/2 space-y-6 text-center md:text-left">
-			<h1 class="text-5xl font-bold">About Us</h1>
-			<p class="text-xl">
-				We're a passionate team of builders, coders, and creators who started with FIRST LEGO League—and never stopped dreaming big. Our journey together has been one of learning, exploration, and friendship.
+
+<main class="min-h-screen bg-gradient-to-b from-red-400 to-red-500">
+	<!-- Hero Section -->
+	<section class="relative h-[60vh] flex items-center justify-center overflow-hidden">
+		<div class="absolute inset-0">
+			<img src="/Hawking.jpg" alt="Team Banner" class="w-full h-full object-cover opacity-30">
+		</div>
+		<div class="relative z-10 text-center text-white px-4">
+			<h1 class="text-6xl font-bold mb-4">Meet The Incredibots</h1>
+			<p class="text-xl max-w-2xl mx-auto">
+				A passionate team of young innovators from Sammamish, Washington, pushing the boundaries of robotics and technology.
 			</p>
 		</div>
-
-		<!-- Team Photo -->
-		<div class="md:w-1/2">
-			<img src="/Hawking.jpg" alt="Our Team Photo" class="w-full rounded-xl shadow-lg" />
-		</div>
 	</section>
 
-    <section>
-		<h2 class="text-3xl font-semibold text-center mb-10">Meet the Team</h2>
-		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-			{#each teamMembers as member}
-				<div class="flex flex-col items-center text-center space-y-4">
-					<img src={member.image} alt={member.name} class="w-40 h-40 object-cover rounded-full shadow-md border-4 border-white" />
-					<p class="text-xl font-medium">{member.name}</p>
+	<!-- Team Mission -->
+	<section class="py-16 px-4">
+		<div class="max-w-6xl mx-auto bg-white/10 backdrop-blur-md rounded-2xl p-8 text-white">
+			<div class="grid md:grid-cols-2 gap-12 items-center">
+				<div class="space-y-6">
+					<h2 class="text-4xl font-bold">Our Journey</h2>
+					<p class="text-lg leading-relaxed">
+						We're a rookie team that started with FIRST LEGO League and never stopped dreaming big. 
+						Our diverse team of 7th, 8th, and 9th graders brings together unique perspectives and skills, 
+						united by our passion for robotics and innovation.
+					</p>
 				</div>
-			{/each}
-		</div>
-	</section>
-	<!-- Our Mission -->
-	<!-- <section class="text-center space-y-4 max-w-3xl mx-auto">
-		<h2 class="text-3xl font-semibold">Our Mission</h2>
-		<p class="text-lg">
-			To use our creativity, teamwork, and engineering mindset to solve real-world problems and inspire others to innovate with compassion and curiosity.
-		</p>
-	</section> -->
-
-	<!-- Achievements -->
-	<section class="max-w-6xl mx-auto space-y-8">
-		<h2 class="text-3xl font-semibold text-center">🏅 Achievements</h2>
-		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
-			{#each achievements as a}
-				<div class="bg-white text-red-400 rounded-xl p-6 shadow-md text-center space-y-2 hover:scale-105 transition-transform duration-200">
-					<h3 class="text-xl font-bold">{a.title}</h3>
-					<p class="text-sm">{a.description}</p>
+				<div class="grid grid-cols-2 gap-4">
+					<div class="bg-white/20 p-6 rounded-xl">
+						<h3 class="text-2xl font-bold mb-2">Mission</h3>
+						<p>Promoting a better and greener planet while educating young minds about robotics.</p>
+					</div>
+					<div class="bg-white/20 p-6 rounded-xl">
+						<h3 class="text-2xl font-bold mb-2">Vision</h3>
+						<p>Inspiring the next generation of innovators through technology and teamwork.</p>
+					</div>
 				</div>
-			{/each}
+			</div>
 		</div>
 	</section>
 
 	<!-- Team Members -->
+	<section class="py-16 px-4">
+		<div class="max-w-6xl mx-auto">
+			<h2 class="text-4xl font-bold text-white text-center mb-12">Our Team</h2>
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+				{#each teamMembers as member}
+					<div class="group relative">
+						<div class="relative overflow-hidden rounded-xl bg-white/10 backdrop-blur-md p-6 transition-all duration-300 hover:transform hover:scale-105">
+							<img src={member.image} alt={member.name} 
+								class="w-48 h-48 object-cover rounded-full mx-auto mb-4 border-4 border-white/50">
+							<div class="text-center text-white">
+								<h3 class="text-xl font-bold">{member.name}</h3>
+								<p class="text-white/80">{member.role}</p>
+							</div>
+						</div>
+					</div>
+				{/each}
+			</div>
+		</div>
+	</section>
 
-</div>
+	<!-- Achievements -->
+	<section class="py-16 px-4 bg-white/10 backdrop-blur-md">
+		<div class="max-w-6xl mx-auto">
+			<h2 class="text-4xl font-bold text-white text-center mb-12">Our Achievements</h2>
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+				{#each achievements as achievement}
+					<div class="bg-white/20 rounded-xl p-6 transform transition-all duration-300 hover:scale-105">
+						<div class="text-4xl mb-4">{achievement.icon}</div>
+						<h3 class="text-xl font-bold text-white mb-2">{achievement.title}</h3>
+						<p class="text-white/80">{achievement.description}</p>
+					</div>
+				{/each}
+			</div>
+		</div>
+	</section>
+</main>

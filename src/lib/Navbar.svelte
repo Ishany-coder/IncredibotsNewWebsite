@@ -10,7 +10,7 @@
     ];
 </script>
 
-<nav class="bg-red-400 h-16 flex items-center px-4">
+<nav class="bg-red-600 h-16 flex items-center px-4">
     <a href="/">
     <div class="flex items-center">
         <img src="favicon.png" alt="The Incredibots" class="h-10 w-10">
