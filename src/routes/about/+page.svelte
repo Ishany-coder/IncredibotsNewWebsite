@@ -2,21 +2,27 @@
 	import Navbar from "$lib/Navbar.svelte";
 
 	const teamMembers = [
-		{ name: 'Ishan Ghosh', role: 'Team Captain', image: '/Ishan.jpg' },
-		{ name: 'Ishika Saini', role: 'Lead Programmer', image: '/Ishika.png' },
-		{ name: 'Arjit Singh', role: 'Mechanical Lead', image: '/Arjit.jpg' },
-		{ name: 'Anay Agrawal', role: 'Design Lead', image: '/Anay.jpg' },
-		{ name: 'Rishi Ohri', role: 'Outreach Lead', image: '/Rishi.png' },
-		{ name: 'Pia Seth', role: 'Documentation Lead', image: '/Pia.png' },
-		{ name: 'Hridhaan Damani', role: 'Strategy Lead', image: '/Hridhaan.png' }
+		{ name: 'Ishan Ghosh', image: '/Ishan.jpg' },
+		{ name: 'Ishika Saini', image: '/Ishika.png' },
+		{ name: 'Arjit Singh', image: '/Arjit.jpg' },
+		{ name: 'Anay Agrawal', image: '/Anay.jpg' },
+		{ name: 'Rishi Ohri', image: '/Rishi.png' },
+		{ name: 'Pia Seth', image: '/Pia.png' },
+		{ name: 'Hridhaan Damani', image: '/Hridhaan.png' }
 	];
 
-	const achievements = [
-		{ title: 'WAFFLE', description: 'Champions of the international innovation competition.', icon: '🏆' },
-		{ title: 'Maxwell League Meet 1', description: 'Winners of the first league meet.', icon: '🥇' },
-		{ title: 'Maxwell League Meet 2', description: 'Back-to-back champions at Meet 2.', icon: '🎯' },
-		{ title: 'Hawking Interleague', description: 'Victors of the prestigious interleague event.', icon: '⭐' }
-	];
+	const achievements = {
+		ftc: [
+			{ title: 'Maxwell League Meet 1', description: 'Winners of the first league meet.', icon: '🥇' },
+			{ title: 'Maxwell League Meet 2', description: 'Back-to-back champions at Meet 2.', icon: '🎯' },
+			{ title: 'Hawking Interleague', description: 'Victors of the prestigious interleague event.', icon: '⭐' }
+		],
+		fll: [
+			{ title: 'WAFFLE', description: 'Champions of the international innovation competition.', icon: '🏆' },
+			{ title: 'States Innovation project winner', description: 'Winner of the states innovation project competition.', icon: '🥇' },
+			{ title: 'champions award winner of qualifiers and semifinals', description: 'Winner of the champions award competition.', icon: '🥇' }
+		]
+	};
 </script>
 
 <Navbar />
@@ -63,7 +69,6 @@
 						<img src={member.image} alt={member.name} class="w-40 h-40 object-cover rounded-full mx-auto border-4 border-white/30 mb-4">
 						<div class="text-center text-white space-y-1">
 							<h3 class="text-xl font-bold">{member.name}</h3>
-							<p class="text-white/80">{member.role}</p>
 						</div>
 					</div>
 				{/each}
@@ -75,14 +80,33 @@
 	<section class="py-20 px-6 bg-white/10 backdrop-blur-lg rounded-t-3xl">
 		<div class="max-w-6xl mx-auto space-y-10">
 			<h2 class="text-4xl font-bold text-purple-200 text-center">Our Achievements</h2>
-			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-				{#each achievements as achievement}
-					<div class="bg-white/20 rounded-2xl p-6 shadow-md border border-purple-400/20 transition-transform hover:scale-105">
-						<div class="text-4xl mb-4 text-purple-200">{achievement.icon}</div>
-						<h3 class="text-xl font-bold text-purple-200 mb-1">{achievement.title}</h3>
-						<p class="text-white/80 text-sm">{achievement.description}</p>
-					</div>
-				{/each}
+			
+			<!-- FTC Achievements -->
+			<div class="space-y-6">
+				<h3 class="text-3xl font-bold text-purple-200 text-center">FTC Achievements</h3>
+				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+					{#each achievements.ftc as achievement}
+						<div class="bg-white/20 rounded-2xl p-6 shadow-md border border-purple-400/20 transition-transform hover:scale-105">
+							<div class="text-4xl mb-4 text-purple-200">{achievement.icon}</div>
+							<h3 class="text-xl font-bold text-purple-200 mb-1">{achievement.title}</h3>
+							<p class="text-white/80 text-sm">{achievement.description}</p>
+						</div>
+					{/each}
+				</div>
+			</div>
+
+			<!-- FLL Achievements -->
+			<div class="space-y-6">
+				<h3 class="text-3xl font-bold text-purple-200 text-center">FLL Achievements</h3>
+				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+					{#each achievements.fll as achievement}
+						<div class="bg-white/20 rounded-2xl p-6 shadow-md border border-purple-400/20 transition-transform hover:scale-105">
+							<div class="text-4xl mb-4 text-purple-200">{achievement.icon}</div>
+							<h3 class="text-xl font-bold text-purple-200 mb-1">{achievement.title}</h3>
+							<p class="text-white/80 text-sm">{achievement.description}</p>
+						</div>
+					{/each}
+				</div>
 			</div>
 		</div>
 	</section>

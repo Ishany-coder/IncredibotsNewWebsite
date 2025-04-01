@@ -20,20 +20,20 @@
 
 <main class="min-h-screen bg-gradient-to-b from-red-400 to-red-500">
     <!-- Hero Section -->
-    <section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+    <section class="relative min-h-[60vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0">
             <img src="/contact.png" alt="Team Photo" class="w-full h-full object-cover opacity-30">
         </div>
         <div class="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
-            <h1 class="text-6xl font-bold mb-6">Contact Us</h1>
-            <p class="text-2xl mb-8">FTC Team #26336</p>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 md:mb-6">Contact Us</h1>
+            <p class="text-xl md:text-2xl mb-8">FTC Team #26336</p>
         </div>
     </section>
 
 	<!-- Contact Information -->
-	<section class="py-12 px-4">
+	<section class="py-8 md:py-12 px-4">
 		<div class="max-w-6xl mx-auto">
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-12">
 				<!-- Email -->
 				<a href="mailto:incredibotsftc@gmail.com"
 				   class="bg-black/40 backdrop-blur-md rounded-xl p-6 text-white text-center border-2 border-transparent
@@ -71,8 +71,9 @@
 			</div>
 
 			<!-- Contact Form -->
-			<div class="max-w-3xl mx-auto bg-black/40 backdrop-blur-md rounded-xl p-8 border-2 border-transparent hover:border-red-500 transition-all duration-300">
-				<h2 class="text-2xl font-bold text-white mb-6 text-center">Send us a Message</h2><form action="https://formsubmit.co/ghoshsanjoy@gmail.com" method="POST" on:submit={handleSubmit} class="space-y-6">
+			<div class="max-w-3xl mx-auto bg-black/40 backdrop-blur-md rounded-xl p-4 md:p-8 border-2 border-transparent hover:border-red-500 transition-all duration-300">
+				<h2 class="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6 text-center">Send us a Message</h2>
+				<form action="https://formsubmit.co/ghoshsanjoy@gmail.com" method="POST" on:submit={handleSubmit} class="space-y-4 md:space-y-6">
 				<div>
 					<input type="text"
 								 name="name"
@@ -112,7 +113,7 @@
 				<input type="hidden" name="_captcha" value="false">
 
 				<button type="submit"
-								class="w-full bg-white text-red-500 py-3 px-6 rounded-lg font-semibold hover:bg-red-50 transition-colors duration-200 disabled:opacity-50"
+								class="w-full bg-white text-red-500 py-2 md:py-3 px-6 rounded-lg font-semibold hover:bg-red-50 transition-colors duration-200 disabled:opacity-50"
 								disabled={isLoading}>
 					{isLoading ? "Sending..." : "Send Message"}
 				</button>

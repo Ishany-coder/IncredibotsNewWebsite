@@ -16,11 +16,12 @@
     // });
 
     const impactStats = [
-        { number: "500+", label: "Using our resources" },
-        { number: "100+", label: "Introduced to Robotics" },
+        { number: "800+", label: "Using our resources" },
+        { number: "200+", label: "Introduced to Robotics" },
         { number: "100+", label: "Introduced to FIRST" },
-        { number: "4", label: "Teams Mentored" }
+        { number: "5", label: "Teams Mentored" }
     ];
+
 
     const outreachInitiatives = [
         {
@@ -69,15 +70,14 @@
                     <div class="space-y-4">
                         <h2 class="text-3xl font-bold">Who We Are</h2>
                         <p class="text-lg">
-                            We are a rookie team based in Sammamish, Washington. Our team loves Robotics and consists of 
-                            3 7th graders, 2 8th graders and 2 9th graders!
+                            We are a team of middle and high school students from Sammamish, WA. We are passionate about robotics,
+                            technology, and making a positive impact in our community. We participate in the FIRST Tech Challenge (FTC) program, where we design, build, and program robots to compete in various challenges.
                         </p>
                     </div>
                     <div class="space-y-4">
                         <h2 class="text-3xl font-bold">Our Mission</h2>
                         <p class="text-lg">
-                            Our mission is to promote a better and greener planet, educate the young on robotics 
-                            and have fun while doing it!
+                            Our mission is to make robotics more acessible and affordable, while supporting sustainable inititatives and promoting a better planet.
                         </p>
                     </div>
                 </div>

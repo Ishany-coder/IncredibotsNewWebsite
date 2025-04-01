@@ -34,7 +34,7 @@
                   {/if}
                 </div>
                 <div class="flex flex-col">
-                  <div class="rounded-2xl px-6 py-3 
+                  <div class="rounded-2xl px-6
                     {message.role === 'user' 
                       ? 'bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-br-none' 
                       : 'bg-[#40414F] text-gray-100 rounded-bl-none'}">
