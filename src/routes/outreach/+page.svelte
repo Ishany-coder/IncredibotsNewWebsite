@@ -7,42 +7,48 @@
             icon: "🌱",
             description: "Working with local communities to plant trees and promote environmental sustainability.",
             tag: "Environment",
-            link: "/outreach/Seaforest"
+            link: "/outreach/Seaforest",
+            tagColor: "bg-green-500",
         },
         {
             title: "AI Scouting Chatbot",
             icon: "🤖",
             description: "Created an innovative chatbot to help teams with robotics questions and competition preparation.",
-            tag: "Technology",
-            link: "/outreach/scoutingChatbot"
+            tag: "Chatbot",
+            link: "/outreach/scoutingChatbot",
+            tagColor: "bg-purple-500",
         },
         {
             title: "Arduino Education",
             icon: "📚",
             description: "Teaching younger kids the basics of arduino and interacting with hardware. Click here to watch our comprehensive video series!",
             tag: "Education",
-            link: "https://theincredibots.trainercentralsite.com/course/introduction-to-arduino-build-your-first-automated-devices#/home"
+            link: "https://theincredibots.trainercentralsite.com/course/introduction-to-arduino-build-your-first-automated-devices#/home",
+            tagColor: "bg-blue-500",
         },
         {
             title: "Community Events",
             icon: "🤝",
-            description: "Participating in community events to showcase robotics technology and inspire the next generation of engineers.",
-            tag: "Community",
-            link: "/outreach/community-events"
+            description: "Participating in community events to showcase robotics, technology, and inspire the next generation of engineers.",
+            tag: "Events",
+            link: "/outreach/community-events",
+            tagColor: "bg-red-500",
         },
         {
-            title: "FLL Mentorship",
+            title: "FLL Mentorship",    
             icon: "👥",
             description: "Supporting and guiding younger FIRST LEGO League teams in their robotics journey.",
-            tag: "Mentorship",
-            link: "/outreach/mentorship"
+            tag: "Mentoring",
+            link: "/outreach/mentorship",
+            tagColor: "bg-blue-500",
         },
         {
             title: "Sonic Dunk!",
             icon: "🏀",
-            description: "Our FLL innovation project where we share our passion about basketball with blind people around us",
+            description: "Our 2023-24 FLL innovation project dedicated to making basketball accessible to visually impaired athletes.",
             tag: "Sonic Dunk",
-            link: "https://nettle-tin-b81.notion.site/Sonic-Dunk-1c5ecd35b1c8417c94f096eab2dd1c58"
+            link: "https://nettle-tin-b81.notion.site/Sonic-Dunk-1c5ecd35b1c8417c94f096eab2dd1c58",
+            tagColor: "bg-orange-500"
         }
     ];
 </script>
@@ -74,7 +80,7 @@
                     <div class="relative bg-black/30 backdrop-blur-lg rounded-2xl overflow-hidden h-full border border-white/10 hover:border-purple-400 transition-all duration-300">
                         <!-- Tag -->
                         <div class="absolute top-4 right-4 z-20">
-                            <span class="bg-purple-600 text-white px-3 py-1 rounded-full text-sm">
+                            <span class="{category.tagColor} text-white px-3 py-1 rounded-full text-sm">
                                 {category.tag}
                             </span>
                         </div>
