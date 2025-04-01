@@ -15,12 +15,12 @@
     }
 </script>
 
-<nav class="bg-red-600 h-16 flex items-center px-4 relative">
+<nav class="bg-gradient-to-b from-red-600 to-rose-600 h-16 flex items-center px-4">
     <a href="/">
-        <div class="flex items-center">
-            <img src="/favicon.png" alt="The Incredibots" class="h-10 w-10">
-            <h1 class="text-white text-xl ml-2 whitespace-nowrap hidden md:block">The Incredibots #26336</h1>
-        </div>
+    <div class="flex items-center">
+        <img src="/favicon.png" alt="incredibots logo" class="h-12 w-10">
+        <h1 class="text-white text-xl ml-2 whitespace-nowrap">The Incredibots</h1>
+    </div>
     </a>
 
     <!-- Hamburger Menu Button -->

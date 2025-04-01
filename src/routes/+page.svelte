@@ -47,10 +47,11 @@
 
 <Navbar />
 
-<main class="min-h-screen bg-gradient-to-b from-red-400 to-red-500">
+<main class="min-h-screen bg-gradient-to-b from-red-500 to-rose-500">
     <!-- Hero Section -->
     <section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0">
+            <!-- svelte-ignore a11y_img_redundant_alt -->
             <img src="/Meet_1.jpg" alt="Team Photo" class="w-full h-full object-cover opacity-30">
         </div>
         <div class="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
