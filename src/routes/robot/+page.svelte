@@ -5,13 +5,16 @@
 		{
 			title: 'Mecanum Drive Train',
 			image: '/mecanum.png',
-			description: `Jefwi uses a mecanum drive system for full omnidirectional movement, allowing us to strafe, pivot, and make precise movements. We also designed a custom chassis using inverted C-channels to mount the wheels further back, improving weight distribution and stability. Additionally, we replaced U-channels with C-channels wherever possible to reduce weight and compact the frame. movements on the field, giving us superior agility during autonomous and tele-op periods.`
+			description: `Jefwi uses a mecanum drive system for full omnidirectional movement, allowing us to strafe, pivot, and make precise movements. We also designed a custom chassis using inverted C-channels to mount the wheels further back, improving weight distribution and stability. Additionally, we replaced U-channels with C-channels wherever possible to reduce weight and compact the frame. movements on the field, giving us superior agility during autonomous and tele-op periods.`,
+			objectFit: 'contain',
+			page: '/robot/chassis'
 		},
 		{
 			title: 'Clintake Combination',
 			image: '/clintake.png',
 			description: `Jefwi features a hybrid claw and intake mechanism that can grab and pull in game elements quickly. The claw provides strong grip while the intake rollers allow for efficient collection during motion. We call it the Clintake!`,
-			objectFit: 'contain'
+			objectFit: 'contain',
+			page: '/robot/clintake'
 		}
 	];
 </script>
@@ -42,6 +45,7 @@
 	<section class="py-16 px-4">
 		<div class="max-w-6xl mx-auto space-y-12">
 			{#each robotParts as part, i}
+			<a href={part.page}>
 				<div class="bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden transform transition-all duration-300 hover:scale-[1.02]">
 					<div class="flex flex-col md:flex-row {i % 2 === 1 ? 'md:flex-row-reverse' : ''}">
 						<!-- Image Section - Updated styling for Clintake -->
@@ -64,7 +68,7 @@
 							</div>
 						</div>
 					</div>
-				{/if}
+					</a>
 			{/each}
 		</div>
 	</section>

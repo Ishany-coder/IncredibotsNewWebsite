@@ -11,7 +11,7 @@
 		{
 			name: "Tongs Design",
 			date: "2023-02-15",
-			src: ".png",
+			src: "/tongs.png",
 			title: "Original Tongs Design",
 			description: "Our first attempt at a sample collection mechanism using a traditional tongs-style design.",
 			pros: [
