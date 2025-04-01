@@ -85,7 +85,7 @@
 		<div class="text-center mb-12">
 			<h1 class="text-5xl font-bold text-white mb-4">Chassis Evolution</h1>
 			<p class="text-xl text-white/90 max-w-3xl mx-auto">
-				Follow our journey through different chassis designs, from the basic tank drive to our current sophisticated X-drive configuration. Each iteration brought unique challenges and improvements in robot movement and control.
+				Follow our journey from the initial Gobilda Mecanum Drive to our custom lightweight design. Each iteration focused on improving speed, maneuverability, and cycle times while maintaining reliability and control.
 			</p>
 		</div>
 
