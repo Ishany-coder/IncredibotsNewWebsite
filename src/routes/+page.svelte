@@ -16,10 +16,10 @@
     // });
 
     const impactStats = [
-        { number: "500+", label: "Using our resources" },
-        { number: "100+", label: "Introduced to Robotics" },
+        { number: "800+", label: "Using our resources" },
+        { number: "200+", label: "Introduced to Robotics" },
         { number: "100+", label: "Introduced to FIRST" },
-        { number: "4", label: "Teams Mentored" }
+        { number: "5", label: "Teams Mentored" }
     ];
 
     const outreachInitiatives = [
@@ -46,10 +46,11 @@
 
 <Navbar />
 
-<main class="min-h-screen bg-gradient-to-b from-red-400 to-red-500">
+<main class="min-h-screen bg-gradient-to-b from-red-500 to-rose-500">
     <!-- Hero Section -->
     <section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0">
+            <!-- svelte-ignore a11y_img_redundant_alt -->
             <img src="/Meet_1.jpg" alt="Team Photo" class="w-full h-full object-cover opacity-30">
         </div>
         <div class="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
@@ -69,15 +70,14 @@
                     <div class="space-y-4">
                         <h2 class="text-3xl font-bold">Who We Are</h2>
                         <p class="text-lg">
-                            We are a rookie team based in Sammamish, Washington. Our team loves Robotics and consists of 
-                            3 7th graders, 2 8th graders and 2 9th graders!
+                            We are a team of middle and high school students from Sammamish, WA. We are passionate about robotics,
+                            technology, and making a positive impact in our community. We participate in the FIRST Tech Challenge (FTC) program, where we design, build, and program robots to compete in various challenges.
                         </p>
                     </div>
                     <div class="space-y-4">
                         <h2 class="text-3xl font-bold">Our Mission</h2>
                         <p class="text-lg">
-                            Our mission is to promote a better and greener planet, educate the young on robotics 
-                            and have fun while doing it!
+                            Our mission is to make robotics more acessible and affordable, while supporting sustainable inititatives and promoting a better planet.
                         </p>
                     </div>
                 </div>

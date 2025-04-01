@@ -42,53 +42,58 @@
 	<section class="py-16 px-4">
 		<div class="max-w-6xl mx-auto space-y-12">
 			{#each robotParts as part, i}
-				<div class="bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden transform transition-all duration-300 hover:scale-[1.02]">
-					<div class="flex flex-col md:flex-row {i % 2 === 1 ? 'md:flex-row-reverse' : ''}">
-						<!-- Image Section - Updated styling for Clintake -->
-						<div class="md:w-1/2 h-full bg-black/20">
-							<div class="aspect-[5/3] md:h-full w-full">
-								<img src={part.image} 
-									 alt={`Jefwi's ${part.title}`} 
-									 class="w-full h-full {part.objectFit === 'contain' ? 'object-contain' : 'object-cover'} object-center">
+				{#if part.title === 'Clintake Combination'}
+					<!-- Clintake Section with Link -->
+					<a href="/robot/clintake">
+						<div class="bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden transform transition-all duration-300 hover:scale-[1.02]">
+							<div class="flex flex-col md:flex-row {i % 2 === 1 ? 'md:flex-row-reverse' : ''}">
+								<!-- Image Section - Updated styling for Clintake -->
+								<div class="md:w-1/2 h-full bg-black/20">
+									<div class="aspect-[5/3] md:h-full w-full">
+										<img src={part.image} 
+											 alt={`Jefwi's ${part.title}`} 
+											 class="w-full h-full {part.objectFit === 'contain' ? 'object-contain' : 'object-cover'} object-center">
+									</div>
+								</div>
+
+								<!-- Content Section -->
+								<div class="md:w-1/2 p-8 flex flex-col justify-center">
+									<div class="space-y-4">
+										<h2 class="text-3xl font-bold text-white">{part.title}</h2>
+										<p class="text-white/90 leading-relaxed">
+											{part.description}
+										</p>
+									</div>
+								</div>
 							</div>
 						</div>
+					</a>
+				{:else}
+					<!-- Regular Mechanisms Section -->
+					<div class="bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden transform transition-all duration-300 hover:scale-[1.02]">
+						<div class="flex flex-col md:flex-row {i % 2 === 1 ? 'md:flex-row-reverse' : ''}">
+							<!-- Image Section - Updated styling for Clintake -->
+							<div class="md:w-1/2 h-full bg-black/20">
+								<div class="aspect-[5/3] md:h-full w-full">
+									<img src={part.image} 
+										 alt={`Jefwi's ${part.title}`} 
+										 class="w-full h-full {part.objectFit === 'contain' ? 'object-contain' : 'object-cover'} object-center">
+								</div>
+							</div>
 
-						<!-- Content Section -->
-						<div class="md:w-1/2 p-8 flex flex-col justify-center">
-							<div class="space-y-4">
-								<h2 class="text-3xl font-bold text-white">{part.title}</h2>
-								<p class="text-white/90 leading-relaxed">
-									{part.description}
-								</p>
+							<!-- Content Section -->
+							<div class="md:w-1/2 p-8 flex flex-col justify-center">
+								<div class="space-y-4">
+									<h2 class="text-3xl font-bold text-white">{part.title}</h2>
+									<p class="text-white/90 leading-relaxed">
+										{part.description}
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				{/if}
 			{/each}
 		</div>
 	</section>
-
-	<!-- Technical Highlights -->
-<!--	<section class="py-16 px-4 bg-white/10 backdrop-blur-md">-->
-<!--		<div class="max-w-6xl mx-auto text-center">-->
-<!--			<h2 class="text-3xl font-bold text-white mb-12">Jefwi's Capabilities</h2>-->
-<!--			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">-->
-<!--				<div class="bg-white/5 rounded-xl p-6 transform transition-all duration-300 hover:scale-105">-->
-<!--					<div class="text-4xl mb-4">⚙️</div>-->
-<!--					<h3 class="text-xl font-bold text-white mb-2">Precision Engineering</h3>-->
-<!--					<p class="text-white/80">Custom-designed mechanisms for optimal game performance</p>-->
-<!--				</div>-->
-<!--				<div class="bg-white/5 rounded-xl p-6 transform transition-all duration-300 hover:scale-105">-->
-<!--					<div class="text-4xl mb-4">🤖</div>-->
-<!--					<h3 class="text-xl font-bold text-white mb-2">Advanced Control</h3>-->
-<!--					<p class="text-white/80">Sophisticated autonomous and driver-controlled programs</p>-->
-<!--				</div>-->
-<!--				<div class="bg-white/5 rounded-xl p-6 transform transition-all duration-300 hover:scale-105">-->
-<!--					<div class="text-4xl mb-4">🔄</div>-->
-<!--					<h3 class="text-xl font-bold text-white mb-2">Rapid Iteration</h3>-->
-<!--					<p class="text-white/80">Continuous improvement through testing and refinement</p>-->
-<!--				</div>-->
-<!--			</div>-->
-<!--		</div>-->
-<!--	</section>-->
 </main>
