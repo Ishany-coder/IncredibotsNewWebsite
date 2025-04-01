@@ -8,47 +8,53 @@
             description: "Working with local communities to plant trees and promote environmental sustainability.",
             tag: "Environment",
             link: "/outreach/Seaforest",
-            tagColor: "bg-green-500",
+            tagColor: "bg-green-400",
+            hoverColor: "green-500",
         },
         {
             title: "AI Scouting Chatbot",
             icon: "🤖",
             description: "Created an innovative chatbot to help teams with robotics questions and competition preparation.",
-            tag: "Chatbot",
+            tag: "Technology",
             link: "/outreach/scoutingChatbot",
-            tagColor: "bg-purple-500",
+            tagColor: "bg-blue-400",
+            hoverColor: "blue-500",
         },
         {
             title: "Arduino Education",
             icon: "📚",
-            description: "Teaching younger kids the basics of arduino and interacting with hardware. Click here to watch our comprehensive video series!",
-            tag: "Education",
+            description: "Teaching younger kids the basics of Arduino and interacting with hardware. Click here to watch our comprehensive video series!",
+            tag: "Technology",
             link: "https://theincredibots.trainercentralsite.com/course/introduction-to-arduino-build-your-first-automated-devices#/home",
-            tagColor: "bg-blue-500",
+            tagColor: "bg-blue-400",
+            hoverColor: "blue-500",
         },
         {
             title: "Community Events",
             icon: "🤝",
             description: "Participating in community events to showcase robotics, technology, and inspire the next generation of engineers.",
-            tag: "Events",
+            tag: "Community",
             link: "/outreach/community-events",
-            tagColor: "bg-red-500",
+            tagColor: "bg-purple-400",
+            hoverColor: "purple-500",
         },
         {
-            title: "FLL Mentorship",    
+            title: "FLL Mentorship",
             icon: "👥",
             description: "Supporting and guiding younger FIRST LEGO League teams in their robotics journey.",
-            tag: "Mentoring",
+            tag: "Community",
             link: "/outreach/mentorship",
-            tagColor: "bg-blue-500",
+            tagColor: "bg-purple-400",
+            hoverColor: "purple-500",
         },
         {
             title: "Sonic Dunk!",
             icon: "🏀",
             description: "Our 2023-24 FLL innovation project dedicated to making basketball accessible to visually impaired athletes.",
-            tag: "Sonic Dunk",
+            tag: "Community",
             link: "https://nettle-tin-b81.notion.site/Sonic-Dunk-1c5ecd35b1c8417c94f096eab2dd1c58",
-            tagColor: "bg-orange-500"
+            tagColor: "bg-purple-400",
+            hoverColor: "purple-500",
         }
     ];
 </script>
@@ -56,10 +62,11 @@
 <Navbar />
 
 <main class="min-h-screen bg-gradient-to-br from-red-400 to-red-600 pt-16">
-    <!-- Hero Section with Diagonal Design -->
+
+    <!-- Hero Section -->
     <section class="relative h-[60vh] flex items-center justify-center overflow-hidden skew-y-[-3deg] transform -mt-10 bg-black/40">
         <div class="absolute inset-0 -skew-y-[3deg]">
-            <img src="/Meet_1.jpg" alt="Outreach Banner" class="w-full h-full object-cover opacity-40">
+            <img src="/Meet_1.jpg" alt="Outreach Banner" class="w-full h-full object-cover opacity-30" />
         </div>
         <div class="relative z-10 text-center text-white px-4 -skew-y-[3deg]">
             <span class="inline-block bg-purple-600 px-4 py-1 rounded-full text-sm mb-4">Making a Difference</span>
@@ -67,24 +74,25 @@
                 Our Outreach Programs
             </h1>
             <p class="text-xl max-w-2xl mx-auto text-gray-200">
-                Discover how we're impacting our community through technology and innovation
+                Discover how we're impacting our community through technology and innovation.
             </p>
         </div>
     </section>
 
-    <!-- Outreach Categories with Unique Style -->
+    <!-- Outreach Cards -->
     <div class="max-w-7xl mx-auto px-4 py-16">
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {#each outreachProjects as category}
                 <a href={category.link} class="block group">
                     <div class="relative bg-black/30 backdrop-blur-lg rounded-2xl overflow-hidden h-full border border-white/10 hover:border-purple-400 transition-all duration-300">
+
                         <!-- Tag -->
                         <div class="absolute top-4 right-4 z-20">
                             <span class="{category.tagColor} text-white px-3 py-1 rounded-full text-sm">
                                 {category.tag}
                             </span>
                         </div>
-                        
+
                         <!-- Content -->
                         <div class="p-8 h-full flex flex-col">
                             <div class="text-4xl mb-4">{category.icon}</div>
@@ -94,17 +102,6 @@
                             <p class="text-gray-300 mb-6 flex-grow">
                                 {category.description}
                             </p>
-                            <!-- Project Highlights -->
-                            <div class="space-y-3">
-                                {#each category.projects as project}
-                                    <div class="bg-white/5 rounded-lg p-3 text-sm text-gray-300">
-                                        <span class="font-semibold text-purple-300">{project.name}</span>
-                                        <span class="text-xs bg-purple-600/30 px-2 py-1 rounded-full ml-2">
-                                            {project.stats}
-                                        </span>
-                                    </div>
-                                {/each}
-                            </div>
 
                             <!-- Call to Action -->
                             <div class="mt-6 flex items-center text-purple-300 group-hover:text-purple-400 transition-colors">
