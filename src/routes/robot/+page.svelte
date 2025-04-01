@@ -42,41 +42,16 @@
 	<section class="py-16 px-4">
 		<div class="max-w-6xl mx-auto space-y-12">
 			{#each robotParts as part, i}
-				{#if part.title === 'Clintake Combination'}
-						<div class="bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden transform transition-all duration-300 hover:scale-[1.02]">
-							<div class="flex flex-col md:flex-row {i % 2 === 1 ? 'md:flex-row-reverse' : ''}">
-								<!-- Image Section - Updated styling for Clintake -->
-								<div class="md:w-1/2 h-full bg-black/20">
-									<div class="aspect-[5/3] md:h-full w-full">
-										<img src={part.image} 
-											 alt={`Jefwi's ${part.title}`} 
-											 class="w-full h-full {part.objectFit === 'contain' ? 'object-contain' : 'object-cover'} object-center">
-									</div>
-								</div>
-
-								<!-- Content Section -->
-								<div class="md:w-1/2 p-8 flex flex-col justify-center">
-									<div class="space-y-4">
-										<h2 class="text-3xl font-bold text-white">{part.title}</h2>
-										<p class="text-white/90 leading-relaxed">
-											{part.description}
-										</p>
-									</div>
-								</div>
+				<div class="bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden transform transition-all duration-300 hover:scale-[1.02]">
+					<div class="flex flex-col md:flex-row {i % 2 === 1 ? 'md:flex-row-reverse' : ''}">
+						<!-- Image Section - Updated styling for Clintake -->
+						<div class="md:w-1/2 h-full bg-black/20">
+							<div class="aspect-[5/3] md:h-full w-full">
+								<img src={part.image} 
+									 alt={`Jefwi's ${part.title}`} 
+									 class="w-full h-full {part.objectFit === 'contain' ? 'object-contain' : 'object-cover'} object-center">
 							</div>
 						</div>
-				{:else}
-					<!-- Regular Mechanisms Section -->
-					<div class="bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden transform transition-all duration-300 hover:scale-[1.02]">
-						<div class="flex flex-col md:flex-row {i % 2 === 1 ? 'md:flex-row-reverse' : ''}">
-							<!-- Image Section - Updated styling for Clintake -->
-							<div class="md:w-1/2 h-full bg-black/20">
-								<div class="aspect-[5/3] md:h-full w-full">
-									<img src={part.image} 
-										 alt={`Jefwi's ${part.title}`} 
-										 class="w-full h-full {part.objectFit === 'contain' ? 'object-contain' : 'object-cover'} object-center">
-								</div>
-							</div>
 
 							<!-- Content Section -->
 							<div class="md:w-1/2 p-8 flex flex-col justify-center">
