@@ -48,26 +48,15 @@
 <Navbar />
 
 <main class="min-h-screen bg-gradient-to-b from-red-500 to-rose-500">
-    <!-- Hero Section -->
-    <section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0">
-            <!-- svelte-ignore a11y_img_redundant_alt -->
-            <img src="/Meet_1.jpg" alt="Team Photo" class="w-full h-full object-cover opacity-30">
-        </div>
-        <div class="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
-            <h1 class="text-6xl font-bold mb-6">The Incredibots</h1>
-            <p class="text-2xl mb-8">FTC Team #26336</p>
-            <a href="/about" class="inline-block bg-white text-red-500 px-8 py-3 rounded-full font-semibold hover:bg-red-100 transition-colors duration-200">
-                Discover Our Story
-            </a>
-        </div>
-    </section>
+    <h1 class="text-6xl font-bold mb-6 text-white text-center pt-6">The Incredibots</h1>
 
     <!-- Who We Are Section -->
-    <section class="py-16 px-4">
+    <section class="py-8 px-4">
         <div class="max-w-6xl mx-auto bg-white/10 backdrop-blur-md rounded-2xl p-8">
+            
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6 text-white">
+
                     <div class="space-y-4">
                         <h2 class="text-3xl font-bold">Who We Are</h2>
                         <p class="text-lg">
@@ -90,11 +79,20 @@
         </div>
     </section>
 
+    <!-- Hero Section -->
+    <section class="relative flex items-center justify-center overflow-hidden">
+        <div class="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
+            <a href="/about" class="inline-block bg-white text-red-500 px-8 py-3 rounded-full font-semibold hover:bg-red-100 transition-colors duration-200">
+                Discover Our Team
+            </a>
+        </div>
+    </section>
+
     <!-- Impact Stats Section -->
-    <section class="py-16 px-4">
+    <section class="py-8 px-4">
         <div class="max-w-6xl mx-auto">
-            <div class="text-center text-white mb-12">
-                <div class="flex items-center justify-center mb-8">
+            <div class="text-center text-white mb-8">
+                <div class="flex items-center justify-center mb-6">
                     <div class="flex-1 h-1 bg-white/30 mr-4"></div>
                     <h2 class="text-4xl font-bold">Our Impact</h2>
                     <div class="flex-1 h-1 bg-white/30 ml-4"></div>

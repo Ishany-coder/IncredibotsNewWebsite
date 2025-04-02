@@ -31,7 +31,6 @@
 			<div class="w-full h-full bg-black/30"></div>
 		</div>
 		<div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-
 			<span class="inline-block bg-red-500 px-4 py-1 rounded-full text-sm mb-4">FTC 26336</span>
 			<h1 class="text-5xl font-bold mb-6">Meet Jefwi</h1>
 			<p class="text-xl">
