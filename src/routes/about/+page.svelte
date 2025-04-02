@@ -83,6 +83,4 @@
 				{/each}
 			</div>
 		</div>
-	</section>
-
 </main>
