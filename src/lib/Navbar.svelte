@@ -19,7 +19,7 @@
     <a href="/">
     <div class="flex items-center">
         <img src="/favicon.png" alt="incredibots logo" class="h-12 w-10">
-        <h1 class="text-white text-xl ml-2 whitespace-nowrap">The Incredibots team #26336</h1>
+        <h1 class="text-white text-xl ml-2 whitespace-nowrap">The Incredibots</h1>
     </div>
     </a>
 

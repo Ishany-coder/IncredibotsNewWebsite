@@ -1,19 +1,5 @@
 <script>
     import Navbar from '$lib/Navbar.svelte';
-    // import { onMount } from 'svelte';
-
-    // onMount(() => {
-    //     // Save current overflow setting
-    //     const original = document.body.style.overflow;
-        
-    //     // Disable scrolling
-    //     document.body.style.overflow = 'hidden';
-
-    //     // Restore on destroy
-    //     return () => {
-    //         document.body.style.overflow = original;
-    //     };
-    // });
 
     const impactStats = [
         { number: "800+", label: "Using our resources" },
@@ -21,7 +7,6 @@
         { number: "100+", label: "Introduced to FIRST" },
         { number: "5", label: "Teams Mentored" }
     ];
-
 
     const outreachInitiatives = [
         {
@@ -53,23 +38,17 @@
     <!-- Who We Are Section -->
     <section class="py-8 px-4">
         <div class="max-w-6xl mx-auto bg-white/10 backdrop-blur-md rounded-2xl p-8">
-            
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6 text-white">
-
-                    <div class="space-y-4">
-                        <h2 class="text-3xl font-bold">Who We Are</h2>
-                        <p class="text-lg">
-                            We are a team of middle and high school students from Sammamish, WA. We are passionate about robotics,
-                            technology, and making a positive impact in our community. We participate in the FIRST Tech Challenge (FTC) program, where we design, build, and program robots to compete in various challenges.
-                        </p>
-                    </div>
-                    <div class="space-y-4">
-                        <h2 class="text-3xl font-bold">Our Mission</h2>
-                        <p class="text-lg">
-                            Our mission is to make robotics more acessible and affordable, while supporting sustainable inititatives and promoting a better planet.
-                        </p>
-                    </div>
+                    <h2 class="text-3xl font-bold">Who We Are</h2>
+                    <p class="text-lg">
+                        We are a team of middle and high school students from Sammamish, WA. We are passionate about robotics,
+                        technology, and making a positive impact in our community. We participate in the FIRST Tech Challenge (FTC) program, where we design, build, and program robots to compete in various challenges.
+                    </p>
+                    <h2 class="text-3xl font-bold">Our Mission</h2>
+                    <p class="text-lg">
+                        Our mission is to make robotics more accessible and affordable, while supporting sustainable initiatives and promoting a better planet.
+                    </p>
                 </div>
                 <div class="relative group">
                     <img src="/Meet_1.jpg" alt="The Incredibots Team Members" 
@@ -79,12 +58,22 @@
         </div>
     </section>
 
-    <!-- Hero Section -->
-    <section class="relative flex items-center justify-center overflow-hidden">
-        <div class="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
-            <a href="/about" class="inline-block bg-white text-red-500 px-8 py-3 rounded-full font-semibold hover:bg-red-100 transition-colors duration-200">
-                Discover Our Team
-            </a>
+    <!-- FTC Section (NEW SECTION) -->
+    <section class="py-16 px-4 bg-white/10 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center text-white mb-12">
+                <div class="flex items-center justify-center mb-8">
+                    <div class="flex-1 h-1 bg-white/30 mr-4"></div>
+                    <h2 class="text-4xl font-bold">FIRST Tech Challenge (FTC)</h2>
+                    <div class="flex-1 h-1 bg-white/30 ml-4"></div>
+                </div>
+                <p class="text-lg text-white/90 max-w-3xl mx-auto">
+                    The FIRST Tech Challenge is a robotics competition where teams of students design, build, and program robots to compete in an annual challenge. Through FTC, we develop STEM skills, teamwork, and problem-solving abilities while inspiring the next generation of engineers and innovators.
+                </p>
+            </div>
+            <div class="text-center">
+                <button class="px-4 py-2 bg-gray-300 dark:bg-gray-800 text-gray-800 dark:text-white rounded-lg shadow-md hover:bg-gray-300 dark:hover:bg-gray-700 transition"><a href ="https://www.firstinspires.org/" target=_blank>Learn More</a></button>
+            </div>
         </div>
     </section>
 
