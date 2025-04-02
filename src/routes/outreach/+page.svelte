@@ -66,7 +66,7 @@
     <!-- Hero Section -->
     <section class="relative h-[60vh] flex items-center justify-center overflow-hidden skew-y-[-3deg] transform -mt-10 bg-black/40">
         <div class="absolute inset-0 -skew-y-[3deg]">
-            <img src="/Meet_1.jpg" alt="Outreach Banner" class="w-full h-full object-cover opacity-30" />
+            <img src="/outreach.png" alt="Outreach Banner" class="w-full h-full object-cover opacity-30" />
         </div>
         <div class="relative z-10 text-center text-white px-4 -skew-y-[3deg]">
             <span class="inline-block bg-purple-600 px-4 py-1 rounded-full text-sm mb-4">Making a Difference</span>

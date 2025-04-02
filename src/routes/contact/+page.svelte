@@ -19,6 +19,7 @@
 <Navbar />
 
 <main class="min-h-screen bg-gradient-to-b from-red-400 to-red-500">
+
     <!-- Hero Section -->
     <section class="relative min-h-[60vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0">
