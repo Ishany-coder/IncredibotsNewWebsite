@@ -1,19 +1,5 @@
 <script>
     import Navbar from '$lib/Navbar.svelte';
-    // import { onMount } from 'svelte';
-
-    // onMount(() => {
-    //     // Save current overflow setting
-    //     const original = document.body.style.overflow;
-        
-    //     // Disable scrolling
-    //     document.body.style.overflow = 'hidden';
-
-    //     // Restore on destroy
-    //     return () => {
-    //         document.body.style.overflow = original;
-    //     };
-    // });
 
     const impactStats = [
         { number: "800+", label: "Using our resources" },
@@ -21,7 +7,6 @@
         { number: "100+", label: "Introduced to FIRST" },
         { number: "5", label: "Teams Mentored" }
     ];
-
 
     const outreachInitiatives = [
         {
@@ -47,17 +32,16 @@
 
 <Navbar />
 
-<main class="min-h-screen bg-gradient-to-b from-red-500 to-rose-500">
+<main class="min-h-screen bg-gradient-to-b from-red-600 to-rose-500">
     <!-- Hero Section -->
     <section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0">
-            <!-- svelte-ignore a11y_img_redundant_alt -->
-            <img src="/Meet_1.jpg" alt="Team Photo" class="w-full h-full object-cover opacity-30">
+            <img src="/Meet_1.jpg" alt="Team Photo" class="w-full h-full object-cover opacity-40">
         </div>
         <div class="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
-            <h1 class="text-6xl font-bold mb-6">The Incredibots</h1>
-            <p class="text-2xl mb-8">FTC Team #26336</p>
-            <a href="/about" class="inline-block bg-white text-red-500 px-8 py-3 rounded-full font-semibold hover:bg-red-100 transition-colors duration-200">
+            <h1 class="text-6xl font-bold mb-6 drop-shadow-lg">The Incredibots</h1>
+            <p class="text-2xl mb-8 drop-shadow-lg">FTC Team #26336</p>
+            <a href="/about" class="inline-block bg-white text-red-600 px-8 py-3 rounded-full font-semibold hover:bg-red-100 transition-colors duration-200 shadow-lg">
                 Discover Our Story
             </a>
         </div>
@@ -78,7 +62,7 @@
                     <div class="space-y-4">
                         <h2 class="text-3xl font-bold">Our Mission</h2>
                         <p class="text-lg">
-                            Our mission is to make robotics more acessible and affordable, while supporting sustainable inititatives and promoting a better planet.
+                            Our mission is to make robotics more accessible and affordable, while supporting sustainable initiatives and promoting a better planet.
                         </p>
                     </div>
                 </div>
@@ -94,15 +78,11 @@
     <section class="py-16 px-4">
         <div class="max-w-6xl mx-auto">
             <div class="text-center text-white mb-12">
-                <div class="flex items-center justify-center mb-8">
-                    <div class="flex-1 h-1 bg-white/30 mr-4"></div>
-                    <h2 class="text-4xl font-bold">Our Impact</h2>
-                    <div class="flex-1 h-1 bg-white/30 ml-4"></div>
-                </div>
+                <h2 class="text-4xl font-bold">Our Impact</h2>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 {#each impactStats as stat}
-                    <div class="bg-white/10 backdrop-blur-md rounded-xl p-8 text-center text-white transform transition-all duration-300 hover:scale-105">
+                    <div class="bg-gray-800/80 backdrop-blur-md rounded-xl p-8 text-center text-white transform transition-all duration-300 hover:scale-105 shadow-lg">
                         <span class="block text-5xl font-bold mb-2">{stat.number}</span>
                         <span class="text-lg">{stat.label}</span>
                     </div>
@@ -112,19 +92,15 @@
     </section>
 
     <!-- Outreach Initiatives Section -->
-    <section class="py-16 px-4 bg-white/10 backdrop-blur-md">
+    <section class="py-16 px-4 backdrop-blur-md">
         <div class="max-w-6xl mx-auto">
             <div class="text-center text-white mb-12">
-                <div class="flex items-center justify-center mb-8">
-                    <div class="flex-1 h-1 bg-white/30 mr-4"></div>
-                    <h2 class="text-4xl font-bold">Our Outreach Initiatives</h2>
-                    <div class="flex-1 h-1 bg-white/30 ml-4"></div>
-                </div>
+                <h2 class="text-4xl font-bold">Our Outreach Initiatives</h2>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {#each outreachInitiatives as initiative}
                     <a href={initiative.link} class="block">
-                        <div class="bg-white/20 rounded-xl p-8 h-full transform transition-all duration-300 hover:scale-105 text-white">
+                        <div class="bg-gray-500/80 rounded-xl p-8 h-full transform transition-all duration-300 hover:scale-105 text-white shadow-lg">
                             <div class="text-4xl mb-4">{initiative.icon}</div>
                             <h3 class="text-2xl font-bold mb-4">{initiative.title}</h3>
                             <p class="text-white/90">{initiative.description}</p>
