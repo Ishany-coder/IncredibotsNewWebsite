@@ -116,25 +116,25 @@
 									<h3 class="text-2xl font-bold mb-2">{design.name}</h3>
 									<p class="text-sm text-white/80 mb-2">Developed: {design.date}</p>
 									<p class="text-white/90 mb-4">{design.description}</p>
-									<div class="grid grid-cols-2 gap-4">
-										<div>
-											<h4 class="text-red-200 font-semibold mb-2">Pros</h4>
-											<ul class="space-y-1 text-sm">
+									<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+										<div class="bg-black/20 backdrop-blur-sm rounded-lg p-4">
+											<h4 class="text-red-200 font-semibold mb-3">Pros</h4>
+											<ul class="space-y-2">
 												{#each design.pros as pro}
 													<li class="flex items-start">
-														<span class="text-green-400 mr-2">✓</span>
-														{pro}
+														<span class="text-green-400 mr-2 mt-1">✓</span>
+														<span class="text-white/90">{pro}</span>
 													</li>
 												{/each}
 											</ul>
 										</div>
-										<div>
-											<h4 class="text-red-200 font-semibold mb-2">Cons</h4>
-											<ul class="space-y-1 text-sm">
+										<div class="bg-black/20 backdrop-blur-sm rounded-lg p-4">
+											<h4 class="text-red-200 font-semibold mb-3">Cons</h4>
+											<ul class="space-y-2">
 												{#each design.cons as con}
 													<li class="flex items-start">
-														<span class="text-red-400 mr-2">✗</span>
-														{con}
+														<span class="text-red-400 mr-2 mt-1">✗</span>
+														<span class="text-white/90">{con}</span>
 													</li>
 												{/each}
 											</ul>

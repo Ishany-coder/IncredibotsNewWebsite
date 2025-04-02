@@ -55,15 +55,10 @@
 	</section>
 
 	<!-- Achievements -->
+	<section class="py-20 px-6 bg-gradient-to-b from-red-400 to-rose-500 backdrop-blur-lg rounded-t-3xl">
 		<div class="max-w-6xl mx-auto space-y-10">
-			<!-- <h2 class="text-4xl font-bold text-red-200 text-center">Our Achievements</h2> -->
-
 			<h3 class="text-3xl font-bold text-red-200 text-center">FIRST LEGO League (FLL) Achievements</h3>
 			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-			<h2 class="text-4xl font-bold text-red-200 text-center">Our Achievements</h2>
-
-			<h3 class="text-3xl font-bold text-red-200 text-center">FIRST LEGO League (FLL)</h3>
-			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">]
 				{#each fllAchievements as achievement}
 					<div class="bg-white/20 rounded-2xl p-6 shadow-md border border-red-400/20 transition-transform hover:scale-105">
 						<div class="text-4xl mb-4 text-red-200">{achievement.icon}</div>
@@ -72,8 +67,9 @@
 					</div>
 				{/each}
 			</div>
+
 			<h3 class="text-3xl font-bold text-red-200 text-center">FIRST Tech Challenge (FTC)</h3>
-			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 				{#each ftcAchievements as achievement}
 					<div class="bg-white/20 rounded-2xl p-6 shadow-md border border-red-400/20 transition-transform hover:scale-105">
 						<div class="text-4xl mb-4 text-red-200">{achievement.icon}</div>
@@ -83,4 +79,5 @@
 				{/each}
 			</div>
 		</div>
+	</section>
 </main>
