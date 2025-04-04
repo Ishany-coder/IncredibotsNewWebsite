@@ -2,13 +2,13 @@
 	import Navbar from "$lib/Navbar.svelte";
 
 	const teamMembers = [
-		{ name: 'Ishan G', role: 'Programming Co-Lead, Outreach Co-Lead', image: '/Ishan.jpg', rookieYear: '2023-24 FLL Masterpiece', description: 'Ishan is a 7th grader from Pine Lake Middle School who loves to code, work with others and help them out, whether he is at home or at robotics coding and helping others is his favorite thing to do.'},
-		{ name: 'Ishika S', role: 'Outreach Co-Lead, Build Team', image: '/Ishika.png', rookieYear: '2023-24 FLL Masterpiece', description: 'Ishika is a 9th grader who loves tennis, robotics, coding, and is a member of the outreach team. She is passionate about helping others and enjoys working with her teammates to make a difference in the community.'},
-		{ name: 'Rishi O', role: 'Programming Co-Lead, Build Team, Design Team', image: '/Rishi.png' , rookieYear: '2023-24 FLL Masterpiece', description: 'Rishi is an 8th grader in Pine Lake Middle School who loves robotics overall no matter what role it is, whether its building, programming, designing, or helping others he loves it all.'},
-		{ name: 'Arjit S', role: 'Programming Team', image: '/Arjit.jpg' , rookieYear: '2024-25 FTC Into the Deep'},
-		{ name: 'Anay A', role: 'Design Lead, Build Team', image: '/Anay.jpg', rookieYear: '2024-25 FTC Into the Deep', description: 'Anay is a 7th grader in Pine Lake Middle School who loves to design on Onshape and come up with creative solutions to problems.'},
-		{ name: 'Pia S', role: 'Build Team, Outreach Team', image: '/Pia.png', rookieYear: '2024-25 FTC Into the Deep', description: 'Pia is an 8th grader at Pine Lake Middle School who specializes in hardware and wiring. She keeps the robot running smoothly with her expert wiring skills and problem-solving abilities—she knows what to do when everything else goes wrong.'},
-		{ name: 'Hridhaan D', role: 'Build Team, Outreach Team', image: '/Hridhaan.png', rookieYear: '2023-24 FLL Masterpiece', description: 'Hridhaan is a 7th grader in Pine Lake Middle School who loves building and designing—whether it’s on Onshape, with Legos, with real-life materials, or with chips like Arduino Unos.'}
+		{ name: 'Ishan', role: 'Programming Co-Lead, Outreach Co-Lead', image: '/Ishan.jpg', rookieYear: '2023-24 FLL Masterpiece', description: 'figure out something to put here that is not personal info'},
+		{ name: 'Ishika', role: 'Outreach Co-Lead, Build Team', image: '/Ishika.png', rookieYear: '2023-24 FLL Masterpiece', description: 'figure out something to put here that is not personal info'},
+		{ name: 'Rishi', role: 'Programming Co-Lead, Build Team, Design Team', image: '/Rishi.png' , rookieYear: '2023-24 FLL Masterpiece', description: 'figure out something to put here that is not personal info'},
+		{ name: 'Hridhaan', role: 'Build Team, Outreach Team', image: '/Hridhaan.png', rookieYear: '2023-24 FLL Masterpiece', description: 'figure out something to put here that is not personal info'},
+		{ name: 'Arjit', role: 'Programming Team', image: '/Arjit.jpg' , rookieYear: '2024-25 FTC Into the Deep', description: 'figure out something to put here that is not personal info'},
+		{ name: 'Anay', role: 'Design Lead, Build Team', image: '/Anay.jpg', rookieYear: '2024-25 FTC Into the Deep', description: 'figure out something to put here that is not personal info'},
+		{ name: 'Pia', role: 'Build Team, Outreach Team', image: '/Pia.png', rookieYear: '2024-25 FTC Into the Deep', description: 'figure out something to put here that is not personal info'}
 	];
 
 	const fllAchievements = [
@@ -107,7 +107,7 @@
 /* Delay the flip on hover */
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-    transition-delay: 0.5s; /* Flip after 2 seconds of hover */
+    transition-delay: 0.3s; /* Flip after 2 seconds of hover */
 }
 
 .flip-card-front, .flip-card-back {
@@ -134,7 +134,7 @@
 
 /* Front gradient now on the back */
 .flip-card-back {
-    background: linear-gradient(135deg, rgba(239, 68, 68, 0.9), rgba(185, 28, 28, 0.9));  /* Red to darker red gradient */
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.9), rgba(185, 28, 83, 0.9));  /* Red to darker red gradient */
     color: white;
     transform: rotateY(180deg);
 }

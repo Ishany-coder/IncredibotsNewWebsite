@@ -15,25 +15,26 @@
     }
 </script>
 
-<nav class="bg-gradient-to-b from-red-600 to-rose-600 h-16 flex items-center px-4">
-    <a href="/">
-    <div class="flex items-center">
-        <img src="/favicon.png" alt="incredibots logo" class="h-12 w-10">
-        <h1 class="text-white text-xl ml-2 whitespace-nowrap">The Incredibots</h1>
-    </div>
+<nav class="bg-gradient-to-b from-red-600 to-rose-600 h-16 flex items-center px-4 relative shadow-lg">
+    <!-- Logo and Title -->
+    <a href="/" class="flex items-center">
+        <img src="/favicon.png" alt="Incredibots logo" class="h-14 w-12 rounded-full shadow-md">
+        <h1 class="text-white text-2xl ml-2 font-bold tracking-wide whitespace-nowrap">The Incredibots</h1>
     </a>
 
     <!-- Hamburger Menu Button -->
     <button 
-        class="md:hidden ml-auto text-white"
+        class="md:hidden ml-auto text-white focus:outline-none"
         on:click={toggleMenu}
         aria-label="Toggle menu"
+        aria-expanded={isMenuOpen ? "true" : "false"}
     >
         <svg 
-            class="w-6 h-6" 
+            class="w-8 h-8" 
             fill="none" 
             stroke="currentColor" 
             viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
         >
             {#if isMenuOpen}
                 <path 
@@ -58,7 +59,8 @@
         {#each links as { label, path }}
             <a 
                 href="{path}" 
-                class="text-white font-bold hover:underline"
+                class="text-white font-semibold hover:text-yellow-400 transition-all duration-200 ease-in-out transform hover:scale-105"
+                aria-label={label}
             >
                 {label}
             </a>
@@ -67,12 +69,13 @@
 
     <!-- Mobile Navigation -->
     {#if isMenuOpen}
-        <div class="absolute right-0 top-16 bg-red-600 w-64 py-4 px-4 shadow-lg md:hidden">
+        <div class="absolute right-0 top-16 bg-opacity-90 bg-red-700 w-64 py-6 px-6 shadow-xl rounded-md md:hidden transition-all duration-300 ease-in-out transform scale-95">
             {#each links as { label, path }}
                 <a 
                     href="{path}" 
-                    class="block text-white font-bold py-2 hover:underline"
+                    class="block text-white font-semibold py-3 hover:bg-rose-800 hover:underline transition duration-150 ease-in-out transform hover:scale-105"
                     on:click={() => isMenuOpen = false}
+                    aria-label={label}
                 >
                     {label}
                 </a>
