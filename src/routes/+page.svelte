@@ -36,7 +36,7 @@
     <!-- Hero Section -->
     <section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0">
-            <img src="/Meet_1.jpg" alt="Team Photo" class="w-full h-full object-cover opacity-30">
+            <img src="/Meet_1.jpg" alt="Incredibots team members in a group photo during a robotics competition" class="w-full h-full object-cover opacity-30">
         </div>
         <div class="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
             <h1 class="text-6xl font-bold mb-6">The Incredibots</h1>
@@ -49,7 +49,7 @@
 
     <!-- Who We Are Section -->
     <section class="py-16 px-4">
-        <div class="max-w-6xl mx-auto bg-white/10 backdrop-blur-md rounded-2xl p-8">
+        <div class="max-w-6xl mx-auto bg-black/10 backdrop-blur-md rounded-2xl p-8">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="space-y-8 text-white">
                     <div class="space-y-4">
@@ -66,8 +66,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="relative group">
-                    <img src="/Meet_1.jpg" alt="The Incredibots Team Members" 
+                <div class="relative group transition-transform duration-300 ease-in-out">
+                    <img src="/Meet_1.jpg" alt="Incredibots team members during robotics event" 
                          class="w-full rounded-xl shadow-lg transform transition-all duration-300 group-hover:scale-105">
                 </div>
             </div>
@@ -81,7 +81,7 @@
 
     <!-- FTC Section -->
     <section class="py-16 px-4">
-        <div class="max-w-6xl mx-auto bg-white/10 backdrop-blur-md rounded-2xl p-8">
+        <div class="max-w-6xl mx-auto bg-black/10 backdrop-blur-md rounded-2xl p-8">
             <div class="text-center text-white">
                 <div class="flex items-center justify-center mb-8">
                     <div class="flex-1 h-1 bg-white/30 mr-4"></div>
@@ -91,7 +91,7 @@
                 <p class="text-lg text-white/90 max-w-3xl mx-auto mb-8">
                     The FIRST Tech Challenge is a robotics competition where teams of students design, build, and program robots to compete in an annual challenge. Through FTC, we develop STEM skills, teamwork, and problem-solving abilities while inspiring the next generation of engineers and innovators.
                 </p>
-                <a href="https://www.firstinspires.org/" target="_blank" 
+                <a href="https://www.firstinspires.org/" target="_blank" rel="noopener noreferrer"
                    class="inline-block bg-white text-red-500 px-8 py-3 rounded-full font-semibold hover:bg-red-100 transition-colors duration-200">
                     Learn More
                 </a>
@@ -111,7 +111,7 @@
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 {#each impactStats as stat}
-                    <div class="bg-white/10 backdrop-blur-md rounded-xl p-8 text-center text-white transform transition-all duration-300 hover:scale-105">
+                    <div class="bg-black/20 backdrop-blur-md rounded-xl p-8 text-center text-white transform transition-all duration-300 hover:scale-105">
                         <span class="block text-5xl font-bold mb-2">{stat.number}</span>
                         <span class="text-lg">{stat.label}</span>
                     </div>
@@ -125,15 +125,15 @@
         <div class="max-w-6xl mx-auto">
             <div class="text-center text-white mb-12">
                 <div class="flex items-center justify-center mb-8">
-                    <div class="flex-1 h-1 bg-white/30 mr-4"></div>
+                    <div class="flex-1 h-1 bg-black/30 mr-4"></div>
                     <h2 class="text-4xl font-bold">Our Outreach Initiatives</h2>
-                    <div class="flex-1 h-1 bg-white/30 ml-4"></div>
+                    <div class="flex-1 h-1 bg-black/30 ml-4"></div>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {#each outreachInitiatives as initiative}
                     <a href={initiative.link} class="block">
-                        <div class="bg-white/10 backdrop-blur-md rounded-xl p-8 h-full transform transition-all duration-300 hover:scale-105 text-white">
+                        <div class="bg-black/20 backdrop-blur-md rounded-xl p-8 h-full transform transition-all duration-300 hover:scale-105 text-white">
                             <div class="text-4xl mb-4">{initiative.icon}</div>
                             <h3 class="text-2xl font-bold mb-4">{initiative.title}</h3>
                             <p class="text-white/90">{initiative.description}</p>
