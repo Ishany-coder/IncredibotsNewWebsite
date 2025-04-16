@@ -23,10 +23,10 @@
         <div class="relative z-10 text-center text-white px-4 py-8">
             <span class="inline-block bg-purple-600 px-4 py-1 rounded-full text-sm mb-4">Making a Difference</span>
             <h1 class="text-5xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300">
-                Our Outreach Programs
+                Our <span class="font-bold text-red-200">Outreach Programs</span>
             </h1>
             <p class="text-lg max-w-3xl mx-auto text-gray-200">
-                Discover how we're impacting our community through technology and innovation.
+                Discover how we're impacting our <span class="font-bold text-red-200">community</span> through <span class="font-bold text-red-200">technology</span> and <span class="font-bold text-red-200">innovation</span>.
             </p>
         </div>
     </section>
@@ -52,7 +52,19 @@
                                 {category.title}
                             </h2>
                             <p class="text-gray-300 mb-6 flex-grow">
-                                {category.description}
+                                {#if category.title === "Seaforest Initiative"}
+                                    Working with <span class="font-bold text-red-200">local communities</span> to <span class="font-bold text-red-200">plant trees</span> and promote <span class="font-bold text-red-200">environmental sustainability</span>.
+                                {:else if category.title === "AI Scouting Chatbot"}
+                                    Created an <span class="font-bold text-red-200">innovative chatbot</span> to help teams with <span class="font-bold text-red-200">robotics questions</span> and <span class="font-bold text-red-200">competition preparation</span>.
+                                {:else if category.title === "Arduino Education"}
+                                    Teaching <span class="font-bold text-red-200">younger kids</span> the basics of <span class="font-bold text-red-200">Arduino</span> and interacting with <span class="font-bold text-red-200">hardware</span>. Click here to watch our <span class="font-bold text-red-200">comprehensive video series</span>!
+                                {:else if category.title === "Community Events"}
+                                    Participating in <span class="font-bold text-red-200">community events</span> to showcase <span class="font-bold text-red-200">robotics</span>, <span class="font-bold text-red-200">technology</span>, and inspire the next generation of <span class="font-bold text-red-200">engineers</span>.
+                                {:else if category.title === "FLL Mentorship"}
+                                    Supporting and guiding <span class="font-bold text-red-200">younger FIRST LEGO League teams</span> in their <span class="font-bold text-red-200">robotics journey</span>.
+                                {:else}
+                                    Our <span class="font-bold text-red-200">2023-24 FLL innovation project</span> dedicated to making <span class="font-bold text-red-200">basketball accessible</span> to <span class="font-bold text-red-200">visually impaired athletes</span>.
+                                {/if}
                             </p>
 
                             <!-- Call to Action -->

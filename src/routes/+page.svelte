@@ -32,7 +32,7 @@
 
 <Navbar />
 
-<main class="min-h-screen bg-gradient-to-b from-red-500 to-rose-500">
+<main class="min-h-screen bg-gradient-to-b from-red-500 to-red-500">
     <!-- Hero Section -->
     <section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0">
@@ -40,7 +40,11 @@
         </div>
         <div class="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
             <h1 class="text-6xl font-bold mb-6">The Incredibots</h1>
-            <p class="text-2xl mb-8">FTC Team #26336</p>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+            <p class="text-2xl mb-4">FTC Team #26336</p>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                We are a <span class="font-bold text-red-200">passionate team</span> of high school students dedicated to <span class="font-bold text-red-200">robotics</span> and <span class="font-bold text-red-200">STEM education</span>. Through <span class="font-bold text-red-200">innovation</span> and <span class="font-bold text-red-200">teamwork</span>, we strive to inspire the next generation of <span class="font-bold text-red-200">engineers</span> and <span class="font-bold text-red-200">leaders</span>.
+            </p>
             <a href="/about" class="inline-block bg-white text-red-500 px-8 py-3 rounded-full font-semibold hover:bg-red-100 transition-colors duration-200">
                 Discover Our Team
             </a>
@@ -48,36 +52,7 @@
     </section>
 
     <!-- Who We Are Section -->
-    <section class="py-16 px-4">
-        <div class="max-w-6xl mx-auto bg-black/10 backdrop-blur-md rounded-2xl p-8">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="space-y-8 text-white">
-                    <div class="space-y-4">
-                        <h2 class="text-3xl font-bold">Who We Are</h2>
-                        <p class="text-lg leading-relaxed">
-                            We are a team of middle and high school students from Sammamish, WA. We are passionate about robotics,
-                            technology, and making a positive impact in our community. We participate in the FIRST Tech Challenge (FTC) program, where we design, build, and program robots to compete in various challenges.
-                        </p>
-                    </div>
-                    <div class="space-y-4">
-                        <h2 class="text-3xl font-bold">Our Mission</h2>
-                        <p class="text-lg leading-relaxed">
-                            Our mission is to make robotics more accessible and affordable, while supporting sustainable initiatives and promoting a better planet.
-                        </p>
-                    </div>
-                </div>
-                <div class="relative group transition-transform duration-300 ease-in-out">
-                    <img src="/Meet_1.jpg" alt="Incredibots team members during robotics event" 
-                         class="w-full rounded-xl shadow-lg transform transition-all duration-300 group-hover:scale-105">
-                </div>
-            </div>
-            <div class="text-center mt-12">
-                <a href="/about" class="inline-block bg-white text-red-500 px-8 py-3 rounded-full font-semibold hover:bg-red-100 transition-colors duration-200 transform hover:scale-105">
-                    Learn More About Us
-                </a>
-            </div>
-        </div>
-    </section>
+
 
     <!-- FTC Section -->
     <section class="py-16 px-4">
@@ -89,7 +64,7 @@
                     <div class="flex-1 h-1 bg-white/30 ml-4"></div>
                 </div>
                 <p class="text-lg text-white/90 max-w-3xl mx-auto mb-8">
-                    The FIRST Tech Challenge is a robotics competition where teams of students design, build, and program robots to compete in an annual challenge. Through FTC, we develop STEM skills, teamwork, and problem-solving abilities while inspiring the next generation of engineers and innovators.
+                    The <span class="font-bold text-red-200">FIRST Tech Challenge</span> is a <span class="font-bold text-red-200">robotics competition</span> where teams of students <span class="font-bold text-red-200">design, build, and program robots</span> to compete in an annual challenge. Through FTC, we develop <span class="font-bold text-red-200">STEM skills</span>, <span class="font-bold text-red-200">teamwork</span>, and <span class="font-bold text-red-200">problem-solving abilities</span> while inspiring the next generation of <span class="font-bold text-red-200">engineers and innovators</span>.
                 </p>
                 <a href="https://www.firstinspires.org/" target="_blank" rel="noopener noreferrer"
                    class="inline-block bg-white text-red-500 px-8 py-3 rounded-full font-semibold hover:bg-red-100 transition-colors duration-200">
@@ -136,7 +111,15 @@
                         <div class="bg-black/20 backdrop-blur-md rounded-xl p-8 h-full transform transition-all duration-300 hover:scale-105 text-white">
                             <div class="text-4xl mb-4">{initiative.icon}</div>
                             <h3 class="text-2xl font-bold mb-4">{initiative.title}</h3>
-                            <p class="text-white/90">{initiative.description}</p>
+                            <p class="text-white/90">
+                                {#if initiative.title === "Impact"}
+                                    We built a <span class="font-bold text-red-200">chatbot</span> which can answer questions, an initiative where we <span class="font-bold text-red-200">plant trees</span> and so much more!
+                                {:else if initiative.title === "Community Events"}
+                                    Participating in <span class="font-bold text-red-200">community events</span> to showcase <span class="font-bold text-red-200">robotics technology</span> and inspire the next generation of <span class="font-bold text-red-200">engineers</span>.
+                                {:else}
+                                    Supporting <span class="font-bold text-red-200">younger teams</span> and students interested in <span class="font-bold text-red-200">FIRST Tech Challenge</span> and <span class="font-bold text-red-200">robotics</span>.
+                                {/if}
+                            </p>
                         </div>
                     </a>
                 {/each}

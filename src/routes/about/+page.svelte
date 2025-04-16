@@ -33,7 +33,31 @@
 			<h1 class="text-6xl font-extrabold drop-shadow-lg">Meet The Incredibots</h1>
 		</div>
 	</section>
-
+    <section class="py-16 px-4">    
+        <div class="max-w-6xl mx-auto bg-black/10 backdrop-blur-md rounded-2xl p-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8 text-white">
+                    <div class="space-y-4">
+                        <h2 class="text-3xl font-bold">Who We Are</h2>
+                        <p class="text-lg leading-relaxed">
+                            We are a team of <span class="font-bold text-red-200">middle and high school students</span> from <span class="font-bold text-red-200">Sammamish, WA</span>. We are passionate about <span class="font-bold text-red-200">robotics</span>,
+                            <span class="font-bold text-red-200">technology</span>, and making a <span class="font-bold text-red-200">positive impact</span> in our community. We participate in the <span class="font-bold text-red-200">FIRST Tech Challenge (FTC)</span> program, where we <span class="font-bold text-red-200">design, build, and program robots</span> to compete in various challenges.
+                        </p>
+                    </div>
+                    <div class="space-y-4">
+                        <h2 class="text-3xl font-bold">Our Mission</h2>
+                        <p class="text-lg leading-relaxed">
+                            Our mission is to make robotics more accessible and affordable, while supporting sustainable initiatives and promoting a better planet.
+                        </p>    
+                    </div>
+                </div>
+                <div class="relative group transition-transform duration-300 ease-in-out">
+                    <img src="/Meet_1.jpg" alt="Incredibots team members during robotics event" 
+                         class="w-full rounded-xl shadow-lg transform transition-all duration-300 group-hover:scale-105">
+                </div>
+            </div>
+        </div>
+    </section>
 	<section class="py-20 px-6 bg-gradient-to-b from-red-400 to-rose-500 backdrop-blur-lg rounded-t-3xl">
 		<div class="max-w-6xl mx-auto space-y-10">
 			<h2 class="text-4xl font-bold text-red-200 text-center">Our Team</h2>
