@@ -5,7 +5,8 @@
         { label: "About", path: "/about" },
         { label: "Outreach", path: "/outreach" },
         { label: "Contact", path: "/contact" },
-        { label: "Robot", path: "/robot" }
+        { label: "Robot", path: "/robot" },
+        { label: "Donations", path: "/donations" }
     ];
 
     let isMenuOpen = false;
