@@ -4,9 +4,14 @@
 	const teamMembers = [
 		{ name: 'Ishan', role: 'Programming Co-Lead, Outreach Co-Lead', image: '/Ishan.jpg', rookieYear: '2023-24 FLL Masterpiece', description: 'When in doubt, let Hridu cook'},
 		{ name: 'Ishika', role: 'Outreach Co-Lead, Build Team', image: '/Ishika.png', rookieYear: '2023-24 FLL Masterpiece', description: 'figure out something to put here that is not personal info'},
+<<<<<<< HEAD
 		{ name: 'Rishi', role: 'Programming Co-Lead, Build Team, Design Team', image: '/Rishi.png' , rookieYear: '2023-24 FLL Masterpiece', description: 'When in doubt, ChatGPT it out'},
 		{ name: 'Hridhaan', role: 'Build Team, Outreach Team', image: '/Hridhaan.png', rookieYear: '2023-24 FLL Masterpiece', description: 'random kid from fortnite'},
 		// { name: 'Arjit', role: 'Programming Team', image: '/Arjit.jpg' , rookieYear: '2024-25 FTC Into the Deep', description: 'figure out something to put here that is not personal info'},
+=======
+		{ name: 'Rishi', role: 'Programming Co-Lead, Build Team, Design Team', image: '/Rishi.png' , rookieYear: '2023-24 FLL Masterpiece', description: 'figure out something to put here that is not personal info'},
+		{ name: 'Hridhaan', role: 'Build Team, Outreach Team', image: '/Hridhaan.png', rookieYear: '2023-24 FLL Masterpiece', description: 'figure out something to put here that is not personal info'},
+>>>>>>> 98b11a7703b3882525978648333540ffccaaa679
 		{ name: 'Anay', role: 'Design Lead, Build Team', image: '/Anay.jpg', rookieYear: '2024-25 FTC Into the Deep', description: 'figure out something to put here that is not personal info'},
 		{ name: 'Pia', role: 'Build Team, Outreach Team', image: '/Pia.png', rookieYear: '2024-25 FTC Into the Deep', description: 'figure out something to put here that is not personal info'}
 	];
@@ -20,7 +25,9 @@
 	const ftcAchievements = [
  		{ title: 'Maxwell League Meet 1', description: 'Winners of the first league meet.', icon: '🥇' },
  		{ title: 'Maxwell League Meet 2', description: 'Back-to-back champions at Meet 2.', icon: '🎯' },
- 		{ title: 'Hawking Interleague', description: 'Best robot at interleague.', icon: '⭐' }
+ 		{ title: 'Hawking Interleague', description: 'Winning alliance captain at interleague.', icon: '⭐' },
+		{ title: 'Capek Semifinal', description: 'Think Award 2nd place at semis.', icon: '⭐' }
+
  	];
 </script>
 
@@ -61,6 +68,9 @@
 	<section class="py-20 px-6 bg-gradient-to-b from-red-400 to-rose-500 backdrop-blur-lg rounded-t-3xl">
 		<div class="max-w-6xl mx-auto space-y-10">
 			<h2 class="text-4xl font-bold text-red-200 text-center">Our Team</h2>
+			<p class="text-lg text-white/90 text-center max-w-2xl mx-auto">
+				Hover over a team member to see their details.
+			</p>
 			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 				{#each teamMembers as member}
 					<div class="flip-card">
@@ -74,7 +84,7 @@
 							<div class="flip-card-back">
 								<h3 class="text-xl font-bold text-white">{member.name}</h3>
 								<p class="text-white/90 text-center mt-2">{member.role}</p>
-								<p class="text-white/80 text-center mt-1 text-sm">{member.rookieYear}</p>
+								<p class="text-white/80 text-center mt-1 text-sm">{"Rookie Season: " + member.rookieYear}</p>
 								{#if member.description}
 									<p class="text-white/80 text-center mt-4 text-sm italic">{member.description}</p>
 								{/if}
