@@ -2,11 +2,11 @@
 	import Navbar from "$lib/Navbar.svelte";
 
 	const teamMembers = [
-		{ name: 'Ishan', role: 'Programming Co-Lead, Outreach Co-Lead', image: '/Ishan.jpg', rookieYear: '2023-24 FLL Masterpiece', description: 'figure out something to put here that is not personal info'},
+		{ name: 'Ishan', role: 'Programming Co-Lead, Outreach Co-Lead', image: '/Ishan.jpg', rookieYear: '2023-24 FLL Masterpiece', description: 'When in doubt, let Hridu cook'},
 		{ name: 'Ishika', role: 'Outreach Co-Lead, Build Team', image: '/Ishika.png', rookieYear: '2023-24 FLL Masterpiece', description: 'figure out something to put here that is not personal info'},
-		{ name: 'Rishi', role: 'Programming Co-Lead, Build Team, Design Team', image: '/Rishi.png' , rookieYear: '2023-24 FLL Masterpiece', description: 'figure out something to put here that is not personal info'},
-		{ name: 'Hridhaan', role: 'Build Team, Outreach Team', image: '/Hridhaan.png', rookieYear: '2023-24 FLL Masterpiece', description: 'figure out something to put here that is not personal info'},
-		{ name: 'Arjit', role: 'Programming Team', image: '/Arjit.jpg' , rookieYear: '2024-25 FTC Into the Deep', description: 'figure out something to put here that is not personal info'},
+		{ name: 'Rishi', role: 'Programming Co-Lead, Build Team, Design Team', image: '/Rishi.png' , rookieYear: '2023-24 FLL Masterpiece', description: 'When in doubt, ChatGPT it out'},
+		{ name: 'Hridhaan', role: 'Build Team, Outreach Team', image: '/Hridhaan.png', rookieYear: '2023-24 FLL Masterpiece', description: 'random kid from fortnite'},
+		// { name: 'Arjit', role: 'Programming Team', image: '/Arjit.jpg' , rookieYear: '2024-25 FTC Into the Deep', description: 'figure out something to put here that is not personal info'},
 		{ name: 'Anay', role: 'Design Lead, Build Team', image: '/Anay.jpg', rookieYear: '2024-25 FTC Into the Deep', description: 'figure out something to put here that is not personal info'},
 		{ name: 'Pia', role: 'Build Team, Outreach Team', image: '/Pia.png', rookieYear: '2024-25 FTC Into the Deep', description: 'figure out something to put here that is not personal info'}
 	];

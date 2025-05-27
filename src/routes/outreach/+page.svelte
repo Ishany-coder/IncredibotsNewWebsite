@@ -3,7 +3,7 @@
 
     const outreachProjects = [
         { title: "Seaforest Initiative", icon: "🌱", description: "Working with local communities to plant trees and promote environmental sustainability.", tag: "Environment", link: "/outreach/Seaforest", tagColor: "bg-green-400", hoverColor: "green-500" },
-        { title: "AI Scouting Chatbot", icon: "🤖", description: "Created an innovative chatbot to help teams with robotics questions and competition preparation.", tag: "Technology", link: "/outreach/scoutingChatbot", tagColor: "bg-blue-400", hoverColor: "blue-500" },
+        //{ title: "AI Scouting Chatbot", icon: "🤖", description: "Created an innovative chatbot to help teams with robotics questions and competition preparation.", tag: "Technology", link: "/outreach/scoutingChatbot", tagColor: "bg-blue-400", hoverColor: "blue-500" },
         { title: "Arduino Education", icon: "📚", description: "Teaching younger kids the basics of Arduino and interacting with hardware. Click here to watch our comprehensive video series!", tag: "Technology", link: "https://theincredibots.trainercentralsite.com/course/introduction-to-arduino-build-your-first-automated-devices#/home", tagColor: "bg-blue-400", hoverColor: "blue-500" },
         { title: "Community Events", icon: "🤝", description: "Participating in community events to showcase robotics, technology, and inspire the next generation of engineers.", tag: "Community", link: "/outreach/community-events", tagColor: "bg-purple-400", hoverColor: "purple-500" },
         { title: "FLL Mentorship", icon: "👥", description: "Supporting and guiding younger FIRST LEGO League teams in their robotics journey.", tag: "Community", link: "/outreach/mentorship", tagColor: "bg-purple-400", hoverColor: "purple-500" },
@@ -23,7 +23,7 @@
         <div class="relative z-10 text-center text-white px-4 py-8">
             <span class="inline-block bg-purple-600 px-4 py-1 rounded-full text-sm mb-4">Making a Difference</span>
             <h1 class="text-5xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300">
-                Our <span class="font-bold text-red-200">Outreach Programs</span>
+                <span class="font-bold text-red-200">Outreach Programs</span>
             </h1>
             <p class="text-lg max-w-3xl mx-auto text-gray-200">
                 Discover how we're impacting our <span class="font-bold text-red-200">community</span> through <span class="font-bold text-red-200">technology</span> and <span class="font-bold text-red-200">innovation</span>.
