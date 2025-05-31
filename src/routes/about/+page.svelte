@@ -2,7 +2,7 @@
 	import Navbar from "$lib/Navbar.svelte";
 
 	const teamMembers = [
-		{ name: 'Ishan', role: 'Programming Co-Lead, Outreach Co-Lead', image: '/Ishan.jpg', rookieYear: '2023-24 FLL Masterpiece', description: 'When in doubt, let Hridu cook'},
+		{ name: 'Ishan', role: 'Programming Co-Lead, Outreach Co-Lead', image: '/Ishan.jpg', rookieYear: '2023-24 FLL Masterpiece', description: 'People say nothing is impossible to do but I do nothing every day -Winnie the Pooh'},
 		{ name: 'Ishika', role: 'Outreach Co-Lead, Build Team', image: '/Ishika.png', rookieYear: '2023-24 FLL Masterpiece', description: 'figure out something to put here that is not personal info'},
 		{ name: 'Rishi', role: 'Programming Co-Lead, Build Team, Design Team', image: '/Rishi.png' , rookieYear: '2023-24 FLL Masterpiece', description: 'When in doubt, ChatGPT it out'},
 		{ name: 'Hridhaan', role: 'Build Team, Outreach Team', image: '/Hridhaan.png', rookieYear: '2023-24 FLL Masterpiece', description: 'random kid from fortnite'},
