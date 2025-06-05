@@ -1,4 +1,4 @@
-# Inrediots Team Website
+# Inredibots Team Website
 
 Welcome to the official repository for the **[Your Robotics Team Name]** website! This project is built using **Svelte**, providing a fast and interactive web experience to showcase our team, projects, events, and achievements.
 
