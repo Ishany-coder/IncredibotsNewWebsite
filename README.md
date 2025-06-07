@@ -1,38 +1,98 @@
-# sv
+# Inredibots Team Website
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Welcome to the official repository for the **[Your Robotics Team Name]** website! This project is built using **Svelte**, providing a fast and interactive web experience to showcase our team, projects, events, and achievements.
 
-## Creating a project
+---
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Table of Contents
 
-```bash
-# create a new project in the current directory
-npx sv create
+- [About](#about)  
+- [Features](#features)  
+- [Demo](#demo)  
+- [Getting Started](#getting-started)  
+- [Development](#development)  
+- [Deployment](#deployment)  
+- [Contributing](#contributing)  
+- [License](#license)  
+- [Contact](#contact)  
 
-# create a new project in my-app
-npx sv create my-app
+---
+
+## About
+
+This website serves as the official online presence of the **[Your Robotics Team Name]**, featuring:
+
+- Team information and member profiles  
+- Details about current and past robotics projects  
+- Upcoming event announcements and schedules  
+- Media gallery with photos and videos  
+- Contact information for collaboration and sponsorship  
+
+Built with Svelte for fast loading and a smooth user interface.
+
+---
+
+## Features
+
+- Responsive design for desktop and mobile  
+- Dynamic routing using SvelteKit (if applicable)  
+- Interactive components showcasing project details  
+- Easy-to-update content via markdown or JSON (customize as per your data source)  
+- Integrated contact form (optional)  
+- Lightweight and performant  
+
+---
+
+## Demo
+
+*Live demo is not available at this time.*
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or higher recommended)  
+- npm or yarn package manager  
+
+### Installation
+
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/Ishany-coder/IncredibotsNewWebsite.git
+   cd robotics-team-website
+Install dependencies
+
+ ```bash
+npm install
+# or
+yarn install
+Start the development server
 ```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+# or
+yarn dev
+Open your browser at http://localhost:5173 (or the port indicated in your terminal)
 ```
 
-## Building
+Development
+Source code is located in the /src directory
 
-To create a production version of your app:
+Components live in /src/lib/components (or your structure)
 
+Routes (if using SvelteKit) are in /src/routes
+
+Styling is done with Tailwind CSS (if applicable) or your chosen styling method
+
+Deployment
+Explain your deployment process here. For example:
+
+Build the project with:
 ```bash
 npm run build
+# or
+yarn build
+Deploy the build directory to your hosting provider (Netlify, Vercel, GitHub Pages, etc.)
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
