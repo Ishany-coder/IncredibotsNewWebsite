@@ -7,7 +7,7 @@
 		{ name: 'Rishi', role: 'Programming Co-Lead, Build Team, Design Team', image: '/Rishi.png' , rookieYear: '2023-24 FLL Masterpiece', description: 'When in doubt, ChatGPT it out'},
 		{ name: 'Hridhaan', role: 'Build Team, Outreach Team', image: '/Hridhaan.png', rookieYear: '2023-24 FLL Masterpiece', description: 'You tried your best and you failed miserably the lesson is to never try'},
 		{ name: 'Anay', role: 'Design Lead, Build Team', image: '/Anay.jpg', rookieYear: '2024-25 FTC Into the Deep', description: 'The biggest risk is taking no risk at all'},
-		{ name: 'Pia', role: 'Build Team, Outreach Team', image: '/Pia.png', rookieYear: '2024-25 FTC Into the Deep', description: 'figure out something to put here that is not personal info'}
+		{ name: 'Pia', role: 'Build Team, Outreach Team', image: '/Pia.png', rookieYear: '2024-25 FTC Into the Deep', description: `Life isn't about perfection; it's about becoming a better person than you were yesterday`}
 	];
 
 	const fllAchievements = [
@@ -24,9 +24,7 @@
 
  	];
 </script>
-
 <Navbar />
-
 <main class="min-h-screen bg-red-400">
 	<section class="relative h-[60vh] flex items-center justify-center overflow-hidden rounded-b-3xl shadow-lg">
 		<img src="/Hawking.jpg" alt="Team Banner" class="absolute inset-0 w-full h-full object-cover brightness-75">
