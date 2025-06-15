@@ -16,7 +16,7 @@
                 <p class="text-white/90">
                     Contact us at <a href="mailto:incredibots26336@gmail.com" 
                                    class="text-white hover:text-red-300 transition-colors">
-                        incredibots26336@gmail.com
+                        incredibotsftc@gmail.com
                     </a>
                 </p>
             </div>
