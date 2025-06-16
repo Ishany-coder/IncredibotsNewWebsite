@@ -10,7 +10,7 @@
 	const designs = [
 		{
 			name: "Tongs Design",
-			date: "2023-02-15",
+			date: "2024-010-15",
 			src: "/tong.png",
 			title: "Original Tongs Design",
 			description: "Our first attempt at a sample collection mechanism using a traditional tongs-style design.",
@@ -27,7 +27,7 @@
 		},
 		{
 			name: "Chopsticks Design",
-			date: "2023-06-30",
+			date: "2024-11-15",
 			src: "/tongs.png",
 			title: "Chopsticks Mechanism",
 			description: "An improved design featuring a single moving arm for greater precision and flexibility.",
@@ -42,10 +42,10 @@
 		},
 		{
 			name: "Clintake Design",
-			date: "2023-09-20",
+			date: "2024-12-20",
 			src: "/clintake.png",
-			title: "Final Clintake Design",
-			description: "Our current hybrid claw and intake mechanism designed for efficient pixel collection and transfer.",
+			title: "Clintake Design",
+			description: "Our  hybrid claw and intake mechanism designed for efficient sample collection and transfer.",
 			pros: [
 				"High-speed sample collection",
 				"Reliable and consistent performance",
@@ -54,6 +54,22 @@
 			cons: [
 				"More complex to build",
         "weights a lot"
+			]
+		},
+		{
+			name: 'Intake claw design',
+			date: "2025-6-30",
+			src: '/claw.png',
+			title: 'Current Intake claws',
+			description: 'Our current intake claws designed for efficient sample collection and transfer. With a color sensor for auto ejection and specially designed claws 2 split 2 samples next to each other',
+			pros: [
+				"Auto ejection if we pick the wrong color sample",
+				"Reliable and consistent performance",
+				"Lightweight design",
+				"Splits 2 samples so we only pick 1"
+			],
+			cons: [
+				"More complex to build"
 			]
 		}
 	];
@@ -212,7 +228,7 @@
 				<ul class="space-y-3 text-white/90">
 					<li class="flex items-start">
 						<span class="text-red-200 mr-2">•</span>
-						From single-pixel to multi-pixel collection
+						Automatic sample ejection
 					</li>
 					<li class="flex items-start">
 						<span class="text-red-200 mr-2">•</span>
@@ -246,7 +262,7 @@
 					</li>
 					<li class="flex items-start">
 						<span class="text-red-200 mr-2">•</span>
-						Team collaboration benefits
+						Most features doesn't mean best features
 					</li>
 				</ul>
 			</div>
