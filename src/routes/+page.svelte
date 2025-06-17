@@ -50,7 +50,7 @@
     <!-- Hero Section -->
     <section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0">
-            <img src="/Meet_1.jpg" alt="Team Photo" class="w-full h-full object-cover opacity-30">
+            <img src="/Hawking.jpg" alt="Team Photo" class="w-full">
         </div>
         <div class="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
             <h1 class="text-6xl font-bold mb-6">The Incredibots</h1>
@@ -69,7 +69,7 @@
                     <div class="space-y-4">
                         <h2 class="text-3xl font-bold">Who We Are</h2>
                         <p class="text-lg">
-                            We are a rookie FTC team based in ur mom, Washington. Our team loves robotics and consists of 
+                            We are a rookie FTC team based in Sammamish, Washington. Our team loves robotics and consists of 
                             middle and high schoolers. One of our favorite things to do after a long meeting is eat some tasty snacks.
                         </p>
                     </div>
