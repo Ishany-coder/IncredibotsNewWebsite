@@ -16,13 +16,6 @@
 			objectFit: 'contain',
 			page: '/robot/claw'
 		}
-		// {
-		// 	title: 'Clintake Combination',
-		// 	image: '/clintake.png',
-		// 	description: `Envision features a hybrid claw and intake mechanism that can grab and pull in game elements quickly. The claw provides strong grip while the intake rollers allow for efficient collection during motion. We call it the Clintake!`,
-		// 	objectFit: 'contain',
-		// 	page: '/robot/clintake'
-		// }
 	];
 </script>
 
