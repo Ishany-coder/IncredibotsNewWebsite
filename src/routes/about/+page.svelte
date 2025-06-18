@@ -2,12 +2,12 @@
 	import Navbar from "$lib/Navbar.svelte";
 
 	const teamMembers = [
-		{ name: 'Ishan', role: 'Programming Co-Lead, Outreach Co-Lead', image: '/Ishan.jpg', rookieYear: '2023-24 FLL Masterpiece', description: 'The only thing that gets me out of bed is donuts'},
-		{ name: 'Ishika', role: 'Outreach Co-Lead, Build Team', image: '/Ishika.png', rookieYear: '2023-24 FLL Masterpiece', description: `We'll take the next chance. And the next. On and on until we win... or the chances are spent. ~Jyn Erso`},
-		{ name: 'Rishi', role: 'Programming Co-Lead, Build Team, Design Team', image: '/Rishi.png' , rookieYear: '2023-24 FLL Masterpiece', description: 'When in doubt, ChatGPT it out'},
-		{ name: 'Hridhaan', role: 'Build Team, Outreach Team', image: '/Hridhaan.png', rookieYear: '2023-24 FLL Masterpiece', description: `Just because I don't care doesn't mean I don't understand`},
-		{ name: 'Anay', role: 'Design Lead, Build Team', image: '/Anay.jpg', rookieYear: '2024-25 FTC Into the Deep', description: '"If people are doubting how far you can go, you need to so far, you dont hear them anymore"'},
-		{ name: 'Pia', role: 'Build Team, Outreach Team', image: '/Pia.png', rookieYear: '2024-25 FTC Into the Deep', description: `Life isn't about perfection; it's about becoming a better person than you were yesterday`}
+		{ name: 'Ishan', role: 'Programming Co-Lead, Outreach Co-Lead', image: '/Team_members/Ishan.jpg', rookieYear: '2023-24 FLL Masterpiece', description: 'The only thing that gets me out of bed is donuts'},
+		{ name: 'Ishika', role: 'Outreach Co-Lead, Build Team', image: '/Team_members/Ishika.png', rookieYear: '2023-24 FLL Masterpiece', description: `We'll take the next chance. And the next. On and on until we win... or the chances are spent. ~Jyn Erso`},
+		{ name: 'Rishi', role: 'Programming Co-Lead, Build Team, Design Team', image: '/Team_members/Rishi.png' , rookieYear: '2023-24 FLL Masterpiece', description: 'When in doubt, ChatGPT it out'},
+		{ name: 'Hridhaan', role: 'Build Team, Outreach Team', image: '/Team_members/Hridhaan.png', rookieYear: '2023-24 FLL Masterpiece', description: `Just because I don't care doesn't mean I don't understand`},
+		{ name: 'Anay', role: 'Design Lead, Build Team', image: '/Team_members/Anay.jpg', rookieYear: '2024-25 FTC Into the Deep', description: '"If people are doubting how far you can go, you need to so far, you dont hear them anymore"'},
+		{ name: 'Pia', role: 'Build Team, Outreach Team', image: '/Team_members/Pia.png', rookieYear: '2024-25 FTC Into the Deep', description: `Life isn't about perfection; it's about becoming a better person than you were yesterday`}
 	];
 
 	const fllAchievements = [
@@ -27,7 +27,7 @@
 <Navbar />
 <main class="min-h-screen bg-red-400">
 	<section class="relative h-[60vh] flex items-center justify-center overflow-hidden rounded-b-3xl shadow-lg">
-		<img src="/Hawking.jpg" alt="Team Banner" class="absolute inset-0 w-full h-full object-cover brightness-75">
+		<img src="/Events/Hawking.jpg" alt="Team Banner" class="absolute inset-0 w-full h-full object-cover brightness-75">
 		<div class="relative z-10 text-center text-white px-4">
 			<h1 class="text-6xl font-extrabold drop-shadow-lg">Meet The Incredibots</h1>
 		</div>
@@ -51,7 +51,7 @@
                     </div>
                 </div>
                 <div class="relative group transition-transform duration-300 ease-in-out">
-                    <img src="/Meet_1.jpg" alt="Incredibots team members during robotics event" 
+                    <img src="/Events/Meet_1.jpg" alt="Incredibots team members during robotics event" 
                          class="w-full rounded-xl shadow-lg transform transition-all duration-300 group-hover:scale-105">
                 </div>
             </div>

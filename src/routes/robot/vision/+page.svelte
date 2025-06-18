@@ -14,7 +14,7 @@
 		</div>
 
 		<div class="relative mb-16">
-			<img src="/samples.png" alt="Sample Images with Boxes" class="rounded-3xl shadow-xl w-full h-96 object-cover" />
+			<img src="/Robot/Vision/samples.png" alt="Sample Images with Boxes" class="rounded-3xl shadow-xl w-full h-96 object-cover" />
 			<div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 				<div class="text-center text-white px-8">
 					<h3 class="text-3xl font-bold mb-2">Early Detection Results</h3>
@@ -26,7 +26,7 @@
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
 			<div class="relative group">
 				<div class="absolute inset-0 bg-black/50 transition-opacity duration-500 group-hover:opacity-0"></div>
-				<img src="/logitech camera.webp" alt="Logitech C270 Webcam" class="rounded-3xl shadow-xl w-full h-auto max-h-[500px] object-cover transition-transform duration-500 group-hover:scale-105" />
+				<img src="/Robot/Vision/logitech camera.webp" alt="Logitech C270 Webcam" class="rounded-3xl shadow-xl w-full h-auto max-h-[500px] object-cover transition-transform duration-500 group-hover:scale-105" />
 				<div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
 					<div class="text-center text-white px-8">
 						<h3 class="text-3xl font-bold mb-4">Logitech C270</h3>
@@ -66,7 +66,7 @@
 
 			<div class="relative group">
 				<div class="absolute inset-0 bg-black/50 transition-opacity duration-500 group-hover:opacity-0"></div>
-				<img src="/limelight.webp" alt="Limelight Camera" class="rounded-3xl shadow-xl w-full h-auto max-h-[500px] object-cover transition-transform duration-500 group-hover:scale-105" />
+				<img src="/Robot/Vision/limelight.webp" alt="Limelight Camera" class="rounded-3xl shadow-xl w-full h-auto max-h-[500px] object-cover transition-transform duration-500 group-hover:scale-105" />
 				<div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
 					<div class="text-center text-white px-8">
 						<h3 class="text-3xl font-bold mb-4">Limelight</h3>

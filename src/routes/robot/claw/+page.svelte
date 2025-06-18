@@ -11,7 +11,7 @@
 		{
 			name: "Tongs Design",
 			date: "2024-010-15",
-			src: "/tong.png",
+			src: "/Robot/Claw/tong.png",
 			title: "Original Tongs Design",
 			description: "Our first attempt at a sample collection mechanism using a traditional tongs-style design.",
 			pros: [
@@ -28,7 +28,7 @@
 		{
 			name: "Chopsticks Design",
 			date: "2024-11-15",
-			src: "/tongs.png",
+			src: "/Robot/Claw/tongs.png",
 			title: "Chopsticks Mechanism",
 			description: "An improved design featuring a single moving arm for greater precision and flexibility.",
 			pros: [
@@ -43,7 +43,7 @@
 		{
 			name: "Clintake Design",
 			date: "2024-12-20",
-			src: "/clintake.png",
+			src: "/Robot/Claw/clintake.png",
 			title: "Clintake Design",
 			description: "Our  hybrid claw and intake mechanism designed for efficient sample collection and transfer.",
 			pros: [
@@ -59,7 +59,7 @@
 		{
 			name: 'Intake claw design',
 			date: "2025-6-30",
-			src: '/claw.png',
+			src: '/Robot/Claw/claw.png',
 			title: 'Current Intake claws',
 			description: 'Our current intake claws designed for efficient sample collection and transfer. With a color sensor for auto ejection and specially designed claws 2 split 2 samples next to each other',
 			pros: [

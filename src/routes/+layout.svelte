@@ -30,13 +30,7 @@
                     </a>
                 </p>
                 <p class="text-white/90">
-                    Follow us on 
-                    <a href="https://www.instagram.com/incredibots26336/" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       class="text-white hover:text-red-300 transition-colors">
-                        Instagram
-                    </a>
+                    Follow us on Instagram @ftc26336
                 </p>
             </div>
         </div>
@@ -46,7 +40,7 @@
             <div class="flex flex-col items-center">
                 <p class="text-white/90 mb-4">Sponsored by</p>
                 <a href="https://incorta.com" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
-                    <img src="/IncortaLogo.png" alt="Incorta Logo" class="h-12 w-auto">
+                    <img src="/Sponsors/IncortaLogo.png" alt="Incorta Logo" class="h-12 w-auto">
                 </a>
             </div>
         </div>

@@ -4,14 +4,14 @@
 	const robotParts = [
 		{
 			title: 'Vision',
-			image: '/samples.png',
+			image: '/Robot/Vision/samples.png',
 			description: `Our robot leverages advanced computer vision with a Limelight camera system, enabling precise and efficient sample collection. This cutting-edge technology allows our robot to automatically detect and acquire game pieces with remarkable accuracy and speed, giving us a significant competitive advantage in both autonomous and tele-operated modes.`,
 			objectFit: 'contain',
 			page: '/robot/vision'
 		},
 		{
 			title: 'Claw',
-			image: '/claw.png',
+			image: '/Robot/Claw/claw.png',
 			description: `Envision features a custom lightweight intake claw designed to seperate and easily intake onle 1 sample if 2 are next to each other. It also features our first intake to transfer system where we move back our horizontal slides and transfer the sample to our outake/scoring system. This redeuces cycle times a lot because of how well each mechanism is suited for its job.`,
 			objectFit: 'contain',
 			page: '/robot/claw'
@@ -25,7 +25,7 @@
 	<!-- Hero Section -->
 	<section class="relative h-[120vh] flex items-center justify-center overflow-hidden">
 		<div class="absolute inset-0">
-			<img src="/Envision.png" alt="Envision" class="w-full h-full object-cover opacity-30">
+			<img src="/Robot/Envision.png" alt="Envision" class="w-full h-full object-cover opacity-30">
 		</div>
 		<div class="absolute inset-0">
 			<div class="w-full h-full bg-black/30"></div>

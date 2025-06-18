@@ -9,7 +9,7 @@
       location: "Sammamish Library",
       description:
         "A mock FLL judging and feedback session organized by The Incredibots. Four FLL teams participated, each spending around 45 minutes presenting their projects, reviewing their robot design, and receiving constructive feedback.",
-      image: "/event_4.jpg",
+      image: "/Events/event_4.jpg",
     },
     {
       title: "Build Interactive Prototypes Using Electronics",
@@ -17,7 +17,7 @@
       time: "4:00 PM – 5:30 PM",
       location: "Bellevue Library",
       description:"Calling all 4th graders and above! This event introduced young innovators to real-world prototyping using electronics. Participants built interactive projects and explored robotics and engineering.",
-      image: "/event_2.jpg",
+      image: "/Events/event_2.jpg",
     },
     {
       title: "Discover the Joy of Robotics",
@@ -26,7 +26,7 @@
       location: "Sammamish Library",
       description:
         "The Incredibots shared their journey through the 2023-24 FIRST LEGO League season, showcasing their robot design, challenges, and problem-solving strategies.",
-      image: "/event_1.jpg",
+      image: "/Events/event_1.jpg",
     },
     {
       title: "Learn About FIRST LEGO League",
@@ -35,7 +35,7 @@
       location: "Issaquah Library",
       description:
         "The Incredibots, along with Kreative Koalas and Dynamites, shared insights into FIRST LEGO League, including how to start a team and compete. Over 50 families attended!",
-      image: "/event_3.jpg",
+      image: "/Events/event_3.jpg",
     },
   ];
 </script>

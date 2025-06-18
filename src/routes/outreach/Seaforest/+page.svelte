@@ -84,12 +84,12 @@
 		<div class="flex flex-wrap gap-8 justify-center mb-12">
 			<div class="flex flex-col justify-center items-center">
 				<span class="text-xs md:text-sm font-semibold text-gray-800 pb-4">SPONSORED BY</span>
-				<img src="/Incorta_Logo.png" alt="Incorta Logo" class="h-16 md:h-24" />
+				<img src="/Sponsors/IncortaLogo.png" alt="Incorta Logo" class="h-16 md:h-24" />
 			</div>
 			<div class="flex flex-col justify-center items-center">
 				<span class="text-xs md:text-sm font-semibold text-gray-800 pb-4">PLANTED BY</span>
 				<a href="https://greenr.gifts/pages/event/incredibots-2024-25" target="_blank">
-					<img src="/greenrgifts.png" alt="GreenrGifts Logo" class="h-14 md:h-20" />
+					<img src="/Sponsors/greenrgifts.png" alt="GreenrGifts Logo" class="h-14 md:h-20" />
 				</a>
 			</div>
 		</div>

@@ -50,7 +50,7 @@
     <!-- Hero Section -->
     <section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0">
-            <img src="/Hawking.jpg" alt="Team Photo" class="w-full">
+            <img src="/Events/Hawking.jpg" alt="Team Photo" class="w-full">
         </div>
         <div class="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
             <h1 class="text-6xl font-bold mb-6">The Incredibots</h1>
@@ -82,7 +82,7 @@
                     </div>
                 </div>
                 <div class="relative group">
-                    <img src="/Meet_1.jpg" alt="The Incredibots Team Members" 
+                    <img src="/Events/Meet_1.jpg" alt="The Incredibots Team Members" 
                          class="w-full rounded-xl shadow-lg transform transition-all duration-300 group-hover:scale-105">
                 </div>
             </div>

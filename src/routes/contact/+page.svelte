@@ -23,7 +23,7 @@
     <!-- Hero Section -->
     <section class="relative min-h-[60vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0">
-            <img src="/contact.png" alt="Team Photo" class="w-full h-full object-cover opacity-30">
+            <img src="/Events/contact.png" alt="Team Photo" class="w-full h-full object-cover opacity-30">
         </div>
         <div class="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
             <h1 class="text-4xl md:text-6xl font-bold mb-4 md:mb-6">Contact Us</h1>
