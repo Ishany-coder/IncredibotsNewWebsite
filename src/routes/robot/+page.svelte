@@ -23,9 +23,9 @@
 
 <main class="min-h-screen bg-gradient-to-b from-red-400 to-red-500">
 	<!-- Hero Section -->
-	<section class="relative h-[120vh] flex items-center justify-center overflow-hidden">
+	<section class="relative h-[80vh] flex items-center justify-center overflow-hidden">
 		<div class="absolute inset-0">
-			<img src="/Robot/Envision.png" alt="Envision" class="w-full h-full object-cover opacity-30">
+			<img src="/Robot/EnvisionV2.png" alt="Envision" class="w-full h-full object-cover opacity-30">
 		</div>
 		<div class="absolute inset-0">
 			<div class="w-full h-full bg-black/30"></div>
