@@ -5,7 +5,7 @@
 		{ name: 'Ishan', role: 'Programming Co-Lead, Outreach Co-Lead', image: '/Team_members/Ishan.jpg', rookieYear: '2023-24 FLL Masterpiece', description: 'The only thing that gets me out of bed is donuts'},
 		{ name: 'Ishika', role: 'Outreach Co-Lead, Build Team', image: '/Team_members/Ishika.png', rookieYear: '2023-24 FLL Masterpiece', description: `We'll take the next chance. And the next. On and on until we win... or the chances are spent. ~Jyn Erso`},
 		{ name: 'Rishi', role: 'Programming Co-Lead, Build Team, Design Team', image: '/Team_members/Rishi.png' , rookieYear: '2023-24 FLL Masterpiece', description: 'When in doubt, ChatGPT it out'},
-		{ name: 'Hridhaan', role: 'Build Team, Outreach Team', image: '/Team_members/Hridhaan.png', rookieYear: '2023-24 FLL Masterpiece', description: `Just because I don't care doesn't mean I don't understand`},
+		{ name: 'Hridhaan', role: 'Build Team, Outreach Co-Lead', image: '/Team_members/Hridhaan.png', rookieYear: '2023-24 FLL Masterpiece', description: `Just because I don't care doesn't mean I don't understand`},
 		{ name: 'Anay', role: 'Design Lead, Build Team', image: '/Team_members/Anay.jpg', rookieYear: '2024-25 FTC Into the Deep', description: '"If people are doubting how far you can go, you need to so far, you dont hear them anymore"'},
 		{ name: 'Pia', role: 'Build Team, Outreach Team', image: '/Team_members/Pia.png', rookieYear: '2024-25 FTC Into the Deep', description: `Life isn't about perfection; it's about becoming a better person than you were yesterday`}
 	];
