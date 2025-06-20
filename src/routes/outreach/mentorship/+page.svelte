@@ -143,55 +143,5 @@
 				{/each}
 			</div>
 		</div>
-		<!-- <div class="relative">
-			<div class="absolute inset-0 bg-white/10 rounded-full w-1 h-full z-10"></div>
-			<div class="space-y-12">
-				<div class="relative">
-					<div class="absolute -left-4 top-4 w-8 h-8 bg-red-500 border-4 border-white rounded-full z-20"></div>
-					<div class="bg-white text-red-500 p-8 rounded-2xl shadow-xl relative z-10">
-						<h3 class="text-2xl font-semibold mb-4">Cheezits: From Qualifiers to Semis</h3>
-						<div class="space-y-4">
-							<div class="flex items-start gap-4">
-								<span class="text-2xl font-bold text-red-500">🚀</span>
-								<div>
-									<strong class="block">Last Year:</strong>
-									<p class="text-gray-700">The Cheezits showed promise but got knocked out at qualifiers.</p>
-								</div>
-							</div>
-							<div class="flex items-start gap-4">
-								<span class="text-2xl font-bold text-red-500">🏆</span>
-								<div>
-									<strong class="block">This Year:</strong>
-									<p class="text-gray-700">They powered through challenges and reached the semifinals!</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="relative">
-					<div class="absolute -left-4 top-4 w-8 h-8 bg-red-500 border-4 border-white rounded-full z-20"></div>
-					<div class="bg-white text-red-500 p-8 rounded-2xl shadow-xl relative z-10">
-						<h3 class="text-2xl font-semibold mb-4">Firebolts: Sparks Turn to Flames</h3>
-						<div class="space-y-4">
-							<div class="flex items-start gap-4">
-								<span class="text-2xl font-bold text-red-500">💡</span>
-								<div>
-									<strong class="block">Last Year:</strong>
-									<p class="text-gray-700">The Firebolts were eager learners, experimenting and growing.</p>
-								</div>
-							</div>
-							<div class="flex items-start gap-4">
-								<span class="text-2xl font-bold text-red-500">🔥</span>
-								<div>
-									<strong class="block">This Year:</strong>
-									<p class="text-gray-700">Their dedication launched them to the state championship!</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
 	</section>
 </div>
