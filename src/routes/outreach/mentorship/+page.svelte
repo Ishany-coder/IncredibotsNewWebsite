@@ -12,6 +12,23 @@
 				"Improved coding skills",
 				"Strong team strategy"
 			]
+		},{
+		name: "Dynamites",
+		description: "The Dynamites are a team of enthusiastic and driven kids we got to know last year. From the start, it was clear they had the potential for greatness. Inspired by their passion, we stepped in to support and guide them—and together, they rose to the challenge and earned their place at States.",
+		achievements: [
+			"State Competition",
+			"Improved Innovation Project",
+			"Strong Team Strategy"
+		]
+		},
+		{
+		name: "Apollo Robotics School Team",
+		description: "The Apollo Robotics School Team is a team of enthusiastic and driven kids we got to know last year. From the start, it was clear they had the potential for greatness. Inspired by their passion, we stepped in to support and guide them—and together, they rose to the challenge and earned their place at Semifinals.",
+		achievements: [
+			"Semifinals",
+			"Improved Innovation Project",
+			"Strong Team Strategy"
+		]
 		},
 		{
 			name: "Firebolts",
@@ -23,6 +40,28 @@
 			]
 		}
 	];
+	const journey = [
+		{
+			title: "Firebolts: Sparks Turn to Flames",
+			lastYear: "The Firebolts were eager learners, experimenting and growing.",
+			thisYear: "Their dedication launched them to the state championship!"
+		},
+		{
+			title: "Cheezits: From Qualifiers to Semis",
+			lastYear: "The Cheezits showed promise but got knocked out at qualifiers.",
+			thisYear: "They powered through challenges and reached the semifinals!"
+		},
+		{
+			title: "Beyond Limits: The Apollo Mission",
+			lastYear: "Last year, the Apollo Robotics School Team impressed us with their passion and potential.",
+			thisYear: "This year, they continued to grow and improve, leading them to a well-earned spot in the semifinals!"
+		},
+		{
+			title: "The Dynamites: Fired Up for the Future",
+			lastYear: "Last year the dynamites made it to states where we met them and saw their promising potential.",
+			thisYear: "This year with our help they were able to make it back to states!"
+		}
+	]
 
 	let scrollPosition = 0;
 	
@@ -78,7 +117,35 @@
 		<div class="relative">
 			<div class="absolute inset-0 bg-white/10 rounded-full w-1 h-full z-10"></div>
 			<div class="space-y-12">
-				<!-- Cheezits Timeline -->
+				{#each journey as journey}
+				<div class="relative">
+					<div class="absolute -left-4 top-4 w-8 h-8 bg-red-500 border-4 border-white rounded-full z-20"></div>
+					<div class="bg-white text-red-500 p-8 rounded-2xl shadow-xl relative z-10">
+						<h3 class="text-2xl font-semibold mb-4">{journey.title}</h3>
+						<div class="space-y-4">
+							<div class="flex items-start gap-4">
+								<span class="text-2xl font-bold text-red-500">🚀</span>
+								<div>
+									<strong class="block">Last Year:</strong>
+									<p class="text-gray-700">{journey.lastYear}</p>
+								</div>
+							</div>
+							<div class="flex items-start gap-4">
+								<span class="text-2xl font-bold text-red-500">🏆</span>
+								<div>
+									<strong class="block">This Year:</strong>
+									<p class="text-gray-700">{journey.thisYear}</p>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>	
+				{/each}
+			</div>
+		</div>
+		<!-- <div class="relative">
+			<div class="absolute inset-0 bg-white/10 rounded-full w-1 h-full z-10"></div>
+			<div class="space-y-12">
 				<div class="relative">
 					<div class="absolute -left-4 top-4 w-8 h-8 bg-red-500 border-4 border-white rounded-full z-20"></div>
 					<div class="bg-white text-red-500 p-8 rounded-2xl shadow-xl relative z-10">
@@ -102,7 +169,6 @@
 					</div>
 				</div>
 
-				<!-- Firebolts Timeline -->
 				<div class="relative">
 					<div class="absolute -left-4 top-4 w-8 h-8 bg-red-500 border-4 border-white rounded-full z-20"></div>
 					<div class="bg-white text-red-500 p-8 rounded-2xl shadow-xl relative z-10">
@@ -126,6 +192,6 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</section>
 </div>
